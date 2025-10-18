@@ -20,7 +20,7 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
     .replace(/{{title}}/g, frontmatter.title)
     .replace(/{{description}}/g, frontmatter.description || '')
     .replace(/{{date}}/g, frontmatter.date)
-    .replace(/{{icon}}/g, frontmatter.icon || '')
+    .replace(/{{icon}}/g, frontmatter.icon || '../images/battery-full.png')
     .replace(/{{content}}/g, htmlContent);
 
   const slug = file.replace('.md', '.html');
@@ -56,7 +56,7 @@ let indexContent = fs.readFileSync(indexPath, 'utf8');
 // Replace a placeholder or inject into a container (e.g., <div id="posts"></div>)
 indexContent = indexContent.replace(
     '<!-- posts -->',
-    listItems
+    listItems + '\n <!-- ❎posts -->'
 );
 
 // Save updated index.html

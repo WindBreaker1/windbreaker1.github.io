@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Linux Terminal Commands</title>
+  <meta name="description" content="A list of Linux Terminal commands.">
+  <link rel="icon" href="../images/battery-full.png" type="image/png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1><a class="site-title" href="../index.html">a.b.agora</a></h1>
+  </header>
+  <div class="post-title-section">
+    <img class="icon" src="../images/battery-full.png" alt="">
+    <h1>Linux Terminal Commands</h1>
+  </div>
+  <small>18-10-2025</small>
+  <article><p>Part of the [[Linux]] sub stack of notes.</p>
+<p>Linux Terminal Commands List</p>
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>ls</code></td>
+<td align="left">Lists the content of a directory</td>
+</tr>
+<tr>
+<td align="left"><code>pwd</code></td>
+<td align="left">Prints the working directory</td>
+</tr>
+<tr>
+<td align="left"><code>cd</code></td>
+<td align="left">Changes directory</td>
+</tr>
+<tr>
+<td align="left"><code>mkdir</code></td>
+<td align="left">Creates directories</td>
+</tr>
+<tr>
+<td align="left"><code>cp</code></td>
+<td align="left">Copies files and directories</td>
+</tr>
+<tr>
+<td align="left"><code>mv</code></td>
+<td align="left">Moves (renames) files and directories</td>
+</tr>
+<tr>
+<td align="left"><code>rm</code></td>
+<td align="left">Removes files and directories</td>
+</tr>
+<tr>
+<td align="left"><code>touch</code></td>
+<td align="left">Creates empty files or updates access/modification times</td>
+</tr>
+<tr>
+<td align="left"><code>cat</code></td>
+<td align="left">Displays file contents</td>
+</tr>
+<tr>
+<td align="left"><code>head</code></td>
+<td align="left">Displays the first lines of a file</td>
+</tr>
+<tr>
+<td align="left"><code>tail</code></td>
+<td align="left">Displays the last lines of a file</td>
+</tr>
+<tr>
+<td align="left"><code>less</code></td>
+<td align="left">Displays file contents one screen at a time interactively</td>
+</tr>
+<tr>
+<td align="left"><code>more</code></td>
+<td align="left">Displays file contents one screen at a time</td>
+</tr>
+<tr>
+<td align="left"><code>grep</code></td>
+<td align="left">Searches for lines matching a pattern within files</td>
+</tr>
+<tr>
+<td align="left"><code>find</code></td>
+<td align="left">Searches for files and directories based on specified criteria</td>
+</tr>
+<tr>
+<td align="left"><code>chmod</code></td>
+<td align="left">Changes file permissions</td>
+</tr>
+<tr>
+<td align="left"><code>chown</code></td>
+<td align="left">Changes file owner and group</td>
+</tr>
+<tr>
+<td align="left"><code>sudo</code></td>
+<td align="left">Executes commands with administrative privileges</td>
+</tr>
+<tr>
+<td align="left"><code>man</code></td>
+<td align="left">Displays the manual page for a command</td>
+</tr>
+<tr>
+<td align="left"><code>uname</code></td>
+<td align="left">Shows Linux system information</td>
+</tr>
+<tr>
+<td align="left"><code>uptime</code></td>
+<td align="left">Shows system uptime and load average</td>
+</tr>
+<tr>
+<td align="left"><code>date</code></td>
+<td align="left">Displays the current date and time</td>
+</tr>
+<tr>
+<td align="left"><code>cal</code></td>
+<td align="left">Shows a calendar with the current date highlighted</td>
+</tr>
+<tr>
+<td align="left"><code>hostname</code></td>
+<td align="left">Displays the system host name</td>
+</tr>
+<tr>
+<td align="left"><code>df</code></td>
+<td align="left">Displays free disk space</td>
+</tr>
+<tr>
+<td align="left"><code>du</code></td>
+<td align="left">Estimates file space usage</td>
+</tr>
+<tr>
+<td align="left"><code>free</code></td>
+<td align="left">Displays memory usage</td>
+</tr>
+<tr>
+<td align="left"><code>ps</code></td>
+<td align="left">Reports the status of shell processes</td>
+</tr>
+<tr>
+<td align="left"><code>top</code></td>
+<td align="left">Shows an overall system view of processes</td>
+</tr>
+<tr>
+<td align="left"><code>htop</code></td>
+<td align="left">An interactive process viewer and manager</td>
+</tr>
+<tr>
+<td align="left"><code>kill</code></td>
+<td align="left">Terminates a process by specifying its PID</td>
+</tr>
+<tr>
+<td align="left"><code>killall</code></td>
+<td align="left">Sends a kill signal to all instances of a process by name</td>
+</tr>
+<tr>
+<td align="left"><code>ping</code></td>
+<td align="left">Tests network connectivity</td>
+</tr>
+<tr>
+<td align="left"><code>ssh</code></td>
+<td align="left">Provides secure command-line access to remote Linux systems</td>
+</tr>
+<tr>
+<td align="left"><code>scp</code></td>
+<td align="left">Transfers files securely between machines</td>
+</tr>
+<tr>
+<td align="left"><code>rsync</code></td>
+<td align="left">Synchronizes files and directories between two locations</td>
+</tr>
+<tr>
+<td align="left"><code>wget</code></td>
+<td align="left">Retrieves files from the internet over HTTP, HTTPS, FTP, and FTPS</td>
+</tr>
+<tr>
+<td align="left"><code>curl</code></td>
+<td align="left">Transfers data using various network protocols</td>
+</tr>
+<tr>
+<td align="left"><code>systemctl</code></td>
+<td align="left">Central management tool for controlling the init system</td>
+</tr>
+<tr>
+<td align="left"><code>journalctl</code></td>
+<td align="left">Queries the systemd journal for logs</td>
+</tr>
+<tr>
+<td align="left"><code>clear</code></td>
+<td align="left">Clears the terminal screen</td>
+</tr>
+<tr>
+<td align="left"><code>alias</code></td>
+<td align="left">Defines or displays aliases for commands</td>
+</tr>
+<tr>
+<td align="left"><code>unalias</code></td>
+<td align="left">Removes alias definitions</td>
+</tr>
+<tr>
+<td align="left"><code>which</code></td>
+<td align="left">Returns the full binary path of a program</td>
+</tr>
+<tr>
+<td align="left"><code>whereis</code></td>
+<td align="left">Locates the binary, source, and manual page files for a command</td>
+</tr>
+<tr>
+<td align="left"><code>apropos</code></td>
+<td align="left">Searches help manual pages for keywords</td>
+</tr>
+<tr>
+<td align="left"><code>locate</code></td>
+<td align="left">Finds files by name</td>
+</tr>
+<tr>
+<td align="left"><code>find</code></td>
+<td align="left">Searches for files based on various criteria</td>
+</tr>
+<tr>
+<td align="left"><code>tar</code></td>
+<td align="left">Creates and extracts archive files</td>
+</tr>
+<tr>
+<td align="left"><code>gzip</code></td>
+<td align="left">Compresses or decompresses named files</td>
+</tr>
+<tr>
+<td align="left"><code>bzip2</code></td>
+<td align="left">Compresses or decompresses named files</td>
+</tr>
+<tr>
+<td align="left"><code>mount</code></td>
+<td align="left">Mounts a file system to a directory</td>
+</tr>
+<tr>
+<td align="left"><code>umount</code></td>
+<td align="left">Unmounts a file system</td>
+</tr>
+<tr>
+<td align="left"><code>df</code></td>
+<td align="left">Displays free disk space</td>
+</tr>
+<tr>
+<td align="left"><code>du</code></td>
+<td align="left">Estimates file space usage</td>
+</tr>
+<tr>
+<td align="left"><code>lscpu</code></td>
+<td align="left">Displays information about the CPU architecture</td>
+</tr>
+<tr>
+<td align="left"><code>lsblk</code></td>
+<td align="left">Lists block devices</td>
+</tr>
+<tr>
+<td align="left"><code>lspci</code></td>
+<td align="left">Lists all PCI devices</td>
+</tr>
+<tr>
+<td align="left"><code>lsusb</code></td>
+<td align="left">Lists USB devices</td>
+</tr>
+<tr>
+<td align="left"><code>lshw</code></td>
+<td align="left">Lists hardware information</td>
+</tr>
+<tr>
+<td align="left"><code>cat /proc/cpuinfo</code></td>
+<td align="left">Displays detailed CPU information</td>
+</tr>
+<tr>
+<td align="left"><code>cat /proc/meminfo</code></td>
+<td align="left">Displays detailed memory information</td>
+</tr>
+<tr>
+<td align="left"><code>cat /proc/mounts</code></td>
+<td align="left">Shows mounted file systems</td>
+</tr>
+<tr>
+<td align="left"><code>sudo dmidecode</code></td>
+<td align="left">Provides detailed system hardware information</td>
+</tr>
+<tr>
+<td align="left"><code>hdparm</code></td>
+<td align="left">Retrieves information about hard disk drives</td>
+</tr>
+<tr>
+<td align="left"><code>badblocks</code></td>
+<td align="left">Checks for bad blocks on a device</td>
+</tr>
+<tr>
+<td align="left"><code>fsck</code></td>
+<td align="left">Checks and repairs file system consistency</td>
+</tr>
+<tr>
+<td align="left"><code>id</code></td>
+<td align="left">Prints user and group IDs</td>
+</tr>
+<tr>
+<td align="left"><code>who</code></td>
+<td align="left">Shows who is logged in</td>
+</tr>
+<tr>
+<td align="left"><code>w</code></td>
+<td align="left">Shows who is logged in and what they are doing</td>
+</tr>
+<tr>
+<td align="left"><code>last</code></td>
+<td align="left">Shows a list of the last logged-in users</td>
+</tr>
+<tr>
+<td align="left"><code>finger</code></td>
+<td align="left">Displays information about a user</td>
+</tr>
+<tr>
+<td align="left"><code>useradd</code></td>
+<td align="left">Creates a new user account</td>
+</tr>
+<tr>
+<td align="left"><code>userdel</code></td>
+<td align="left">Deletes a user account</td>
+</tr>
+<tr>
+<td align="left"><code>usermod</code></td>
+<td align="left">Modifies an existing user account</td>
+</tr>
+<tr>
+<td align="left"><code>passwd</code></td>
+<td align="left">Changes a user&#39;s password</td>
+</tr>
+<tr>
+<td align="left"><code>groupadd</code></td>
+<td align="left">Adds a new user security group</td>
+</tr>
+<tr>
+<td align="left"><code>groupdel</code></td>
+<td align="left">Deletes a group</td>
+</tr>
+<tr>
+<td align="left"><code>groupmod</code></td>
+<td align="left">Modifies a group</td>
+</tr>
+<tr>
+<td align="left"><code>groups</code></td>
+<td align="left">Prints the group names a user is in</td>
+</tr>
+<tr>
+<td align="left"><code>sudo</code></td>
+<td align="left">Executes commands with administrative privileges</td>
+</tr>
+<tr>
+<td align="left"><code>su</code></td>
+<td align="left">Switches to another user account</td>
+</tr>
+<tr>
+<td align="left"><code>apt</code></td>
+<td align="left">Manages software packages on Debian/Ubuntu systems</td>
+</tr>
+<tr>
+<td align="left"><code>apt-get</code></td>
+<td align="left">Manages software packages on Debian/Ubuntu systems</td>
+</tr>
+<tr>
+<td align="left"><code>aptitude</code></td>
+<td align="left">Manages software packages on Debian/Ubuntu systems</td>
+</tr>
+<tr>
+<td align="left"><code>yum</code></td>
+<td align="left">Manages software packages on Red Hat/CentOS systems</td>
+</tr>
+<tr>
+<td align="left"><code>dnf</code></td>
+<td align="left">Manages software packages on Fedora/RHEL systems</td>
+</tr>
+<tr>
+<td align="left"><code>rpm</code></td>
+<td align="left">Manages software packages on RPM-based systems</td>
+</tr>
+<tr>
+<td align="left"><code>dpkg</code></td>
+<td align="left">Manages software packages on Debian/Ubuntu systems</td>
+</tr>
+<tr>
+<td align="left"><code>shutdown</code></td>
+<td align="left">Shuts down the system</td>
+</tr>
+<tr>
+<td align="left"><code>reboot</code></td>
+<td align="left">Restarts the system</td>
+</tr>
+<tr>
+<td align="left"><code>halt</code></td>
+<td align="left">Stops the system immediately</td>
+</tr>
+<tr>
+<td align="left"><code>exit</code></td>
+<td align="left">Exits the current shell session</td>
+</tr>
+<tr>
+<td align="left"><code>echo</code></td>
+<td align="left">Displays lines of text</td>
+</tr>
+<tr>
+<td align="left"><code>wc</code></td>
+<td align="left">Counts words, lines, and characters in files</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">Executes commands from a file in the current shell</td>
+</tr>
+<tr>
+<td align="left"><code>set</code></td>
+<td align="left">Displays or sets shell variables and options</td>
+</tr>
+<tr>
+<td align="left"><code>export</code></td>
+<td align="left">Sets an environment variable</td>
+</tr>
+<tr>
+<td align="left"><code>env</code></td>
+<td align="left">Runs a command in a modified environment</td>
+</tr>
+<tr>
+<td align="left"><code>jobs</code></td>
+<td align="left">Lists active jobs</td>
+</tr>
+<tr>
+<td align="left"><code>bg</code></td>
+<td align="left">Sends a job to the background</td>
+</tr>
+<tr>
+<td align="left"><code>fg</code></td>
+<td align="left">Sends a job to the foreground</td>
+</tr>
+<tr>
+<td align="left"><code>wait</code></td>
+<td align="left">Suspends script execution until background jobs are terminated</td>
+</tr>
+<tr>
+<td align="left"><code>nohup</code></td>
+<td align="left">Runs a command immune to hangups</td>
+</tr>
+<tr>
+<td align="left"><code>sleep</code></td>
+<td align="left">Suspends program execution for a specified time</td>
+</tr>
+<tr>
+<td align="left"><code>crontab</code></td>
+<td align="left">Schedules commands to run at a later time</td>
+</tr>
+<tr>
+<td align="left"><code>cron</code></td>
+<td align="left">Daemon to execute scheduled commands</td>
+</tr>
+<tr>
+<td align="left"><code>at</code></td>
+<td align="left">Schedules a command to run once at a specific time</td>
+</tr>
+<tr>
+<td align="left"><code>dig</code></td>
+<td align="left">Performs DNS lookups</td>
+</tr>
+<tr>
+<td align="left"><code>nslookup</code></td>
+<td align="left">Queries DNS for information</td>
+</tr>
+<tr>
+<td align="left"><code>netstat</code></td>
+<td align="left">Displays network connections, routing tables, and interface statistics</td>
+</tr>
+<tr>
+<td align="left"><code>ss</code></td>
+<td align="left">Investigates sockets</td>
+</tr>
+<tr>
+<td align="left"><code>ifconfig</code></td>
+<td align="left">Configures network interfaces</td>
+</tr>
+<tr>
+<td align="left"><code>ip</code></td>
+<td align="left">Manages routing, devices, and tunnels</td>
+</tr>
+<tr>
+<td align="left"><code>route</code></td>
+<td align="left">Manages the kernel&#39;s IP routing table</td>
+</tr>
+<tr>
+<td align="left"><code>ping</code></td>
+<td align="left">Tests network connectivity</td>
+</tr>
+<tr>
+<td align="left"><code>traceroute</code></td>
+<td align="left">Traces the route packets take to a network host</td>
+</tr>
+<tr>
+<td align="left"><code>mtr</code></td>
+<td align="left">Network diagnostics combining ping and traceroute</td>
+</tr>
+<tr>
+<td align="left"><code>nmap</code></td>
+<td align="left">Scans networks for open ports and services</td>
+</tr>
+<tr>
+<td align="left"><code>iptables</code></td>
+<td align="left">Manages firewall rules</td>
+</tr>
+<tr>
+<td align="left"><code>firewall-cmd</code></td>
+<td align="left">Manages firewall rules on systems using firewalld</td>
+</tr>
+<tr>
+<td align="left"><code>nft</code></td>
+<td align="left">Manages packet filtering and classification</td>
+</tr>
+<tr>
+<td align="left"><code>dmesg</code></td>
+<td align="left">Prints the kernel ring buffer messages</td>
+</tr>
+<tr>
+<td align="left"><code>journalctl</code></td>
+<td align="left">Queries the systemd journal</td>
+</tr>
+<tr>
+<td align="left"><code>systemctl</code></td>
+<td align="left">Controls the systemd init system</td>
+</tr>
+<tr>
+<td align="left"><code>hostnamectl</code></td>
+<td align="left">Shows or sets the system hostname</td>
+</tr>
+<tr>
+<td align="left"><code>timedatectl</code></td>
+<td align="left">Shows or sets system date, time, and NTP</td>
+</tr>
+<tr>
+<td align="left"><code>localectl</code></td>
+<td align="left">Shows or sets locale and keyboard layout</td>
+</tr>
+</tbody></table>
+</article>
+</body>
+</html>   
