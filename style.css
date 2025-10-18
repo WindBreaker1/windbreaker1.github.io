@@ -1,0 +1,29 @@
+* {
+  background-color: #222222;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+a {
+  color: #1b911d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #67db65;
+}
+
+.icon {
+  width: 40px;
+}
+
+.site-title {
+  color: #fff;
+}
+
+.post-title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
