@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{title}}</title>
+  <title>{{title}} | abagora</title>
   <meta name="description" content="{{description}}">
   <link rel="icon" href="../images/battery-full.png" type="image/png">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-  <header>
+<body class="page-wrapper">
+  <header class="header">
     <h1><a class="site-title" href="../index.html">a.b.agora</a></h1>
   </header>
   <div class="post-title-section">
     <img class="icon" src="{{icon}}" alt="">
     <h1>{{title}}</h1>
   </div>
-  <small>{{date}}</small>
-  <article>{{content}}</article>
+  <div class="info-wrapper">
+    <img class="medium-icon" src="../images/clock.png" alt="">
+    <div>Created on: {{date}}</div>
+  </div>
+  <article class="article">{{content}}</article>
+  <footer class="footer">
+    <p>Made with love 💖</p>
+  </footer>
 </body>
 </html>   

@@ -1,8 +1,12 @@
 * {
   background-color: #222222;
   color: #fff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  margin: 0;
 }
+
+/* common elements */
 
 a {
   color: #1b911d;
@@ -13,12 +17,64 @@ a:hover {
   color: #67db65;
 }
 
+li {
+  margin: 0px 0px 0px 15px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* main */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 20px 0px;
+}
+
+/* post/article */
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0px 20px 0px;
+}
+
+/* other components */
+
 .icon {
-  width: 40px;
+  width: 32px;
+}
+
+.medium-icon {
+  width: 22px;
 }
 
 .site-title {
   color: #fff;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px 10px 10px;
+  border: 2px solid #979797;
+  border-radius: 5px;
 }
 
 .post-title-section {
@@ -26,4 +82,15 @@ a:hover {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 10px 0;
+  padding: 20px 0px 0px 0px;
 }
