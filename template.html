@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <meta name="keywords" content="{{tags}}">
+  <meta name="author" content="a.b.agora">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="../images/battery-full.png" type="image/png">
   <title>{{title}} | abagora</title>
   <meta name="description" content="{{description}}">
-  <link rel="icon" href="../images/battery-full.png" type="image/png">
-  <link rel="stylesheet" href="../style.css">
 </head>
 <body class="page-wrapper">
   <header class="header">
@@ -17,6 +22,10 @@
   <div class="info-wrapper">
     <img class="medium-icon" src="../images/clock.png" alt="">
     <div>Created on: {{date}}</div>
+  </div>
+  <div class="info-wrapper">
+    <img class="medium-icon" src="../images/tag.svg" alt="">
+    <div>Tags: {{tags}}</div>
   </div>
   <article class="article">{{content}}</article>
   <footer class="footer">

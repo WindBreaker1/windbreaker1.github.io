@@ -1,6 +1,7 @@
 ---
 title: "test"
 date: "18-10-2025"
+tags: "test, test2"
 description: "test"
 icon: ""
 ---

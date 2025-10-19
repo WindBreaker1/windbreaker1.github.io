@@ -19,6 +19,7 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
   const outputHtml = template
     .replace(/{{title}}/g, frontmatter.title)
     .replace(/{{description}}/g, frontmatter.description || '')
+    .replace(/{{tags}}/g, frontmatter.tags || '')
     .replace(/{{date}}/g, frontmatter.date)
     .replace(/{{icon}}/g, frontmatter.icon || '../images/battery-full.png')
     .replace(/{{content}}/g, htmlContent);
