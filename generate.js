@@ -54,9 +54,10 @@ const listItems = outputFiles.map(file => {
 let indexContent = fs.readFileSync(indexPath, 'utf8');
 
 // Replace a placeholder or inject into a container (e.g., <div id="posts"></div>)
+// The [\s\S]*? pattern matches any character (including newlines) non-greedily, so it handles any formatting inside the tags.
 indexContent = indexContent.replace(
-    '<!-- posts -->',
-    listItems + '\n <!-- ❎posts -->'
+  /<ul id="posts-list">[\s\S]*?<\/ul>/,
+  `<ul id="posts-list">\n${listItems}\n</ul>`
 );
 
 // Save updated index.html

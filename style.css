@@ -20,6 +20,7 @@ li {
 
 img {
   border-radius: 10px;
+  max-width: 100%;
 }
 
 blockquote {
@@ -40,10 +41,12 @@ pre {
   display: block;
   word-wrap: break-word;
   margin: 0 10px 0 0;
+  font-size: 14px;
 }
 
 code {
   font: monospace;
+  font-size: 14px;
   /* add some background color to this */
 }
 
@@ -79,6 +82,7 @@ tr:hover {
   max-width: 700px;
   margin: 0px auto;
   padding: 0 20px;
+  font-size: 16px;
 }
 
 /* header */
