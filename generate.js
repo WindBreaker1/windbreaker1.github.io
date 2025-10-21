@@ -21,7 +21,7 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
     .replace(/{{description}}/g, frontmatter.description || '')
     .replace(/{{tags}}/g, frontmatter.tags || '')
     .replace(/{{date}}/g, frontmatter.date)
-    .replace(/{{icon}}/g, frontmatter.icon || '../images/battery-full.png')
+    .replace(/{{icon}}/g, frontmatter.icon || '../images/scroll-text.svg')
     .replace(/{{content}}/g, htmlContent);
 
   const slug = file.replace('.md', '.html');
@@ -44,12 +44,23 @@ const indexPath = path.join(OUTPUT_DIR2, 'index.html');
 // List of all posts
 const outputFiles = fs.readdirSync(OUTPUT_DIR).filter(f => f.endsWith('.html'));
 
-const listItems = outputFiles.map(file => {
-  const title = file.replace('.html', '').split('-').map(word => 
-    word.charAt(0).toUpperCase() + word.slice(1)
-  ).join(' ');
-  return `  <li><a href="/post/${file}">${title}</a></li>`;
-}).join('\n');
+const listItems = fs.readdirSync(CONTENT_DIR)
+  .filter(f => f.endsWith('.md'))
+  .map(file => {
+    const filePath = path.join(CONTENT_DIR, file);
+    const content = fs.readFileSync(filePath, 'utf8');
+    const { data: frontmatter } = matter(content);
+    
+    const htmlFile = file.replace('.md', '.html');
+    const title = frontmatter.title || file.replace('.md', '').split('-').map(word => 
+      word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+    const icon = frontmatter.icon || '../images/scroll-text.svg';
+    const description = frontmatter.description || '';
+    
+    return `<li class="posts-list-item"><a href="/post/${htmlFile}"><img class="icon" src="${icon}" alt=""><h3>${title}</h3><p>${description}</p></a></li>`;
+  })
+  .join('\n');
 
 // Read existing index.html
 let indexContent = fs.readFileSync(indexPath, 'utf8');
@@ -57,8 +68,8 @@ let indexContent = fs.readFileSync(indexPath, 'utf8');
 // Replace a placeholder or inject into a container (e.g., <div id="posts"></div>)
 // The [\s\S]*? pattern matches any character (including newlines) non-greedily, so it handles any formatting inside the tags.
 indexContent = indexContent.replace(
-  /<ul id="posts-list">[\s\S]*?<\/ul>/,
-  `<ul id="posts-list">\n${listItems}\n</ul>`
+  /<ul class="posts-list">[\s\S]*?<\/ul>/,
+  `<ul class="posts-list">\n${listItems}\n</ul>`
 );
 
 // Save updated index.html
