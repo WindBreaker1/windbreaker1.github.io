@@ -128,6 +128,24 @@ hr {
   width: 22px;
 }
 
+.link-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #0000004f;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.link-button:hover {
+  background-color: #0ea400;
+}
+
 .posts-list {
   list-style-type: none;
   display: flex;
@@ -218,10 +236,6 @@ hr {
 
 .footer a {
   color: #fff;
-}
-
-.footer a:hover {
-  color: #67db65;
 }
 
 @media (max-width: 768px) {
