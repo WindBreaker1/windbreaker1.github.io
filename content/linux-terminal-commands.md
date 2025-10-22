@@ -8,7 +8,7 @@ icon: ""
 
 Part of the [[Linux]] sub stack of notes.
 
-Linux Terminal Commands List
+## Linux Terminal Commands List
 
 | Command             | Description                                                            |
 | :------------------ | :--------------------------------------------------------------------- |
@@ -140,3 +140,11 @@ Linux Terminal Commands List
 | `hostnamectl`       | Shows or sets the system hostname                                      |
 | `timedatectl`       | Shows or sets system date, time, and NTP                               |
 | `localectl`         | Shows or sets locale and keyboard layout                               |
+
+## Command Line Examples
+
+Install `inxi`, a provider for information on your software and hardware:
+
+```
+sudo apt install inxi -y   
+```

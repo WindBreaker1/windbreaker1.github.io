@@ -5,7 +5,7 @@ const marked = require('marked');
 
 const CONTENT_DIR = path.join(__dirname, 'content');
 const OUTPUT_DIR = path.join(__dirname, 'post');
-const TEMPLATE_PATH = path.join(__dirname, 'template.html');
+const TEMPLATE_PATH = path.join(__dirname, 'templates/post-template.html');
 
 // Read template
 const template = fs.readFileSync(TEMPLATE_PATH, 'utf8');
@@ -22,6 +22,7 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
     .replace(/{{tags}}/g, frontmatter.tags || '')
     .replace(/{{date}}/g, frontmatter.date)
     .replace(/{{icon}}/g, frontmatter.icon || '../images/scroll-text.svg')
+    .replace(/{{image}}/g, frontmatter.image || '../images/anime-walkman.gif')
     .replace(/{{content}}/g, htmlContent);
 
   const slug = file.replace('.md', '.html');
@@ -58,6 +59,7 @@ const listItems = fs.readdirSync(CONTENT_DIR)
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
     const icon = frontmatter.icon || '../images/scroll-text.svg';
+    const image = frontmatter.image || '../images/anime-walkman.gif'
     const description = frontmatter.description || '';
     
     return `<li class="posts-list-item"><a href="/post/${cleanedUrl}"><img class="icon" src="${icon}" alt=""><h3>${title}</h3><p>${description}</p></a></li>`;
