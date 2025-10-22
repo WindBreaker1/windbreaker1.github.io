@@ -52,13 +52,15 @@ const listItems = fs.readdirSync(CONTENT_DIR)
     const { data: frontmatter } = matter(content);
     
     const htmlFile = file.replace('.md', '.html');
+    const cleanUrl = file.replace('md', '');
+    const cleanedUrl = cleanUrl.replace(/[\s.,]+$/, '');
     const title = frontmatter.title || file.replace('.md', '').split('-').map(word => 
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
     const icon = frontmatter.icon || '../images/scroll-text.svg';
     const description = frontmatter.description || '';
     
-    return `<li class="posts-list-item"><a href="/post/${htmlFile}"><img class="icon" src="${icon}" alt=""><h3>${title}</h3><p>${description}</p></a></li>`;
+    return `<li class="posts-list-item"><a href="/post/${cleanedUrl}"><img class="icon" src="${icon}" alt=""><h3>${title}</h3><p>${description}</p></a></li>`;
   })
   .join('\n');
 
