@@ -78,3 +78,11 @@ indexContent = indexContent.replace(
 
 // Save updated index.html
 fs.writeFileSync(indexPath, indexContent);
+
+
+// ------------------------------------------ //
+// Hide/Show Aside //
+
+let aside = document.querySelector(".aside");
+let menuIcon = document.querySelector(".menu-icon");
+
