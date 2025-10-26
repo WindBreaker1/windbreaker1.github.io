@@ -1,8 +1,10 @@
 This is my simple site.
 
-Dont forget to use the command `node generate.js` to update posts.
+When pushing new changes to the GitHub repo, it automatically uses `node generate.js` to update posts, and `node rss-generator.js` to create the new `rss.xml` with updated posts.
 
-Don't forget to use the command `node rss-generator.js` to create the new `rss.xml` with updated posts.
+If it the Action doesn't activate automatically, do it manually in the console.
+
+When posting a new blog post, upload your md file to the `content` folder.
 
 Don't forget to use `serve` to test your website.
 
@@ -15,9 +17,9 @@ Don't forget to use `serve` to test your website.
 
 ## Future Updates
 
-- [ ] Upgrade to React.
 - [ ] Add social links.
 - [ ] Add email list.
+- [ ] Upgrade to React.
 
 ## Website Inspirations:
 
