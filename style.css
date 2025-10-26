@@ -166,7 +166,6 @@ hr {
 
 .aside.hidden {
   flex: 0;
-  margin-left: -250px;
   overflow: hidden;
 }
 
@@ -181,7 +180,6 @@ hr {
   flex-direction: column;
   gap: 10px;
   transition: flex 0.3s ease;
-  flex-grow: 1; /* <-- Add this */
 }
 
 .main-page.expanded {
@@ -209,6 +207,7 @@ hr {
   padding: 10px;
   max-height: 100px;
   border-radius: 5px;
+  text-overflow: ellipsis;
 }
 
 .posts-list-item:hover {
