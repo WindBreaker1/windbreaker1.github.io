@@ -17,19 +17,21 @@
     <h1><a class="site-title" href="/index">a.b.agora</a></h1>
   </header>
 
-  <div class="post-title-section">
-    <img class="icon" src="{{icon}}" alt="">
-    <h1>{{title}}</h1>
+  <div class="main-page">
+    <div class="post-title-section">
+      <img class="icon" src="{{icon}}" alt="">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="info-wrapper">
+      <img class="medium-icon" src="/images/clock.svg" alt="">
+      <div>Published: {{date}}</div>
+    </div>
+    <div class="info-wrapper">
+      <img class="medium-icon" src="/images/tag.svg" alt="">
+      <div>Tags: {{tags}}</div>
+    </div>
+    <article class="article">{{content}}</article>
   </div>
-  <div class="info-wrapper">
-    <img class="medium-icon" src="/images/clock.svg" alt="">
-    <div>Published: {{date}}</div>
-  </div>
-  <div class="info-wrapper">
-    <img class="medium-icon" src="/images/tag.svg" alt="">
-    <div>Tags: {{tags}}</div>
-  </div>
-  <article class="article">{{content}}</article>
 
   <footer class="footer">
     <nav class="footer-section">
