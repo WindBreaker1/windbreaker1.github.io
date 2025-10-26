@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/style.css">
   <meta name="keywords" content="linux">
   <meta name="author" content="a.b.agora">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="../images/scroll-text.svg" type="image/png">
   <title>Linux Terminal Commands | abagora</title>
   <meta name="description" content="A list of Linux Terminal commands.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
 </head>
 <body class="page-wrapper">
   <header class="header">
@@ -21,11 +22,11 @@
     <h1>Linux Terminal Commands</h1>
   </div>
   <div class="info-wrapper">
-    <img class="medium-icon" src="../images/clock.svg" alt="">
+    <img class="medium-icon" src="/images/clock.svg" alt="">
     <div>Published: 2025-10-18</div>
   </div>
   <div class="info-wrapper">
-    <img class="medium-icon" src="../images/tag.svg" alt="">
+    <img class="medium-icon" src="/images/tag.svg" alt="">
     <div>Tags: linux</div>
   </div>
   <article class="article"><p>Part of the [[Linux]] sub stack of notes.</p>
@@ -558,23 +559,41 @@
 
   <footer class="footer">
     <nav class="footer-section">
-      <h3>Miscellaneous</h3>
-      <a href="../page/digital-garden">
+      <h3>Pages</h3>
+      <a href="/page/digital-garden">
         <button class="link-button">
-          <img src="../images/flower-2.svg" alt="">
+          <img src="/images/flower-2.svg" alt="">
           <div>Digital Garden</div>
         </button>
       </a>
-      <a href="../page/about">
+      <a href="/page/about">
         <button class="link-button">
-          <img src="../images/info.svg" alt="">
+          <img src="/images/info.svg" alt="">
           <div>About</div>
         </button>
       </a>
     </nav>
+
+    <nav class="footer-section">
+      <h3>Miscellaneous</h3>
+      <a href="/rss.xml" target="_blank">
+        <button class="link-button">
+          <img src="/images/rss.svg" alt="">
+          Subscribe to RSS
+        </button>
+      </a>
+      <button class="link-button" id="translateButton">
+        <img src="/images/languages.svg" alt="">
+        Toggle Translation
+      </button>
+      <div id="google_translate_element" style="display: none;"></div>
+    </nav>
+
     <p>Still in construction 🏗️</p>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="/scripts/google-translate.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>   

@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/style.css">
   <meta name="keywords" content="productivity">
   <meta name="author" content="a.b.agora">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="../images/chart-line.svg" type="image/png">
   <title>Embrace Radical Incrementalism | abagora</title>
   <meta name="description" content="Radical incrementalism is the idea that you should progress as slow as you want to in order to guarantee a high degree of quality in your work.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
 </head>
 <body class="page-wrapper">
   <header class="header">
@@ -21,11 +22,11 @@
     <h1>Embrace Radical Incrementalism</h1>
   </div>
   <div class="info-wrapper">
-    <img class="medium-icon" src="../images/clock.svg" alt="">
+    <img class="medium-icon" src="/images/clock.svg" alt="">
     <div>Published: 2025-10-22</div>
   </div>
   <div class="info-wrapper">
-    <img class="medium-icon" src="../images/tag.svg" alt="">
+    <img class="medium-icon" src="/images/tag.svg" alt="">
     <div>Tags: productivity</div>
   </div>
   <article class="article"><p><img src="https://images.unsplash.com/photo-1730382624709-81e52dd294d4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="increment"></p>
@@ -44,23 +45,41 @@
 
   <footer class="footer">
     <nav class="footer-section">
-      <h3>Miscellaneous</h3>
-      <a href="../page/digital-garden">
+      <h3>Pages</h3>
+      <a href="/page/digital-garden">
         <button class="link-button">
-          <img src="../images/flower-2.svg" alt="">
+          <img src="/images/flower-2.svg" alt="">
           <div>Digital Garden</div>
         </button>
       </a>
-      <a href="../page/about">
+      <a href="/page/about">
         <button class="link-button">
-          <img src="../images/info.svg" alt="">
+          <img src="/images/info.svg" alt="">
           <div>About</div>
         </button>
       </a>
     </nav>
+
+    <nav class="footer-section">
+      <h3>Miscellaneous</h3>
+      <a href="/rss.xml" target="_blank">
+        <button class="link-button">
+          <img src="/images/rss.svg" alt="">
+          Subscribe to RSS
+        </button>
+      </a>
+      <button class="link-button" id="translateButton">
+        <img src="/images/languages.svg" alt="">
+        Toggle Translation
+      </button>
+      <div id="google_translate_element" style="display: none;"></div>
+    </nav>
+
     <p>Still in construction 🏗️</p>
   </footer>
 
-  <script src="../script.js"></script>
+  <script src="/scripts/google-translate.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>   
