@@ -290,7 +290,6 @@ hr {
 
   .aside {
     flex: 0;
-    margin-left: -250px;
     overflow: hidden;
   }
 }
