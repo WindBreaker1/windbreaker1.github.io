@@ -16,7 +16,8 @@ Don't forget to use `serve` to test your website.
 ## Future Updates
 
 - [ ] Upgrade to React.
-- [ ] Add social links
+- [ ] Add social links.
+- [ ] Add email list.
 
 ## Website Inspirations:
 
