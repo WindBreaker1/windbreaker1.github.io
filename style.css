@@ -158,12 +158,10 @@ hr {
 .posts-list-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  justify-content: center;
   background-color: #0000004f;
   margin: 0;
   padding: 10px;
-  max-height: 100px;
+  max-height: 150px;
   border-radius: 5px;
   text-overflow: ellipsis;
 }
@@ -172,11 +170,11 @@ hr {
   background-color: #0ea400;
 }
 
-.posts-list-item a, p {
+.posts-list-item a, p, i, b {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;

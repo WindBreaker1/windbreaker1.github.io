@@ -1,6 +1,6 @@
 ---
 title: "Embrace Radical Incrementalism"
-date: "22/10/2025"
+date: "2025-10-22"
 tags: "productivity"
 description: "Radical incrementalism is the idea that you should progress as slow as you want to in order to guarantee a high degree of quality in your work."
 icon: "../images/chart-line.svg"

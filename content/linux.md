@@ -1,6 +1,6 @@
 ---
 title: "Linux"
-date: "18-10-2025"
+date: "2025-10-18"
 tags: "linux"
 description: "A few resources on Linux."
 icon: "../images/gamepad.svg"

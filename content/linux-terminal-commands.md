@@ -1,6 +1,6 @@
 ---
 title: "Linux Terminal Commands"
-date: "18-10-2025"
+date: "2025-10-18"
 tags: "linux"
 description: "A list of Linux Terminal commands."
 icon: ""
