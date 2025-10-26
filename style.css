@@ -217,6 +217,12 @@ hr {
   object-fit: cover;
 }
 
+.main-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* site nav */
 
 .footer-section {
