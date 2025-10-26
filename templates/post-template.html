@@ -13,21 +13,48 @@
 </head>
 <body class="page-wrapper">
   <header class="header">
-    <h1><a class="site-title" href="../index">a.b.agora</a></h1>
+    <img class="menu-icon" src="../images/menu.svg" alt="">
+    <h1><a class="site-title" href="/index">a.b.agora</a></h1>
   </header>
-  <div class="post-title-section">
-    <img class="icon" src="{{icon}}" alt="">
-    <h1>{{title}}</h1>
+
+  <div class="inside-page-wrapper">
+
+    <aside class="aside">
+      <h2>Aside</h2>
+      <a href="../page/digital-garden">
+        <button class="link-button">
+          <img src="../images/flower-2.svg" alt="">
+          <div>Digital Garden</div>
+        </button>
+      </a>
+      <a href="../page/about">
+        <button class="link-button">
+          <img src="../images/info.svg" alt="">
+          <div>About</div>
+        </button>
+      </a>
+    </aside>
+
+    <div class="main-page">
+      <div class="post-title-section">
+        <img class="icon" src="{{icon}}" alt="">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="info-wrapper">
+        <img class="medium-icon" src="../images/clock.svg" alt="">
+        <div>Published: {{date}}</div>
+      </div>
+      <div class="info-wrapper">
+        <img class="medium-icon" src="../images/tag.svg" alt="">
+        <div>Tags: {{tags}}</div>
+      </div>
+      <article class="article">{{content}}</article>
+    </div>
+
   </div>
-  <div class="info-wrapper">
-    <img class="medium-icon" src="../images/clock.svg" alt="">
-    <div>Published: {{date}}</div>
-  </div>
-  <div class="info-wrapper">
-    <img class="medium-icon" src="../images/tag.svg" alt="">
-    <div>Tags: {{tags}}</div>
-  </div>
-  <article class="article">{{content}}</article>
+
+
+
   <footer class="footer">
     <nav class="site-nav">
       <a href="../page/digital-garden">
@@ -46,5 +73,7 @@
     <hr>
     <p>Still in construction 🏗️</p>
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>   
