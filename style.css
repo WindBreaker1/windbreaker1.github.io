@@ -288,4 +288,10 @@ hr {
   .page-wrapper {
     padding: 0 10px;
   }
+
+  .aside {
+    flex: 0;
+    margin-left: -250px;
+    overflow: hidden;
+  }
 }
