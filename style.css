@@ -170,7 +170,11 @@ hr {
   background-color: #0ea400;
 }
 
-.posts-list-item a, p, i, b {
+
+.posts-list-item a,
+.posts-list-item p,
+.posts-list-item i,
+.posts-list-item b {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
