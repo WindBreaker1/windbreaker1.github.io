@@ -103,9 +103,24 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 10px;
-  padding: 20px 0px 30px 0px;
+  margin:   0px 0px 30px 0px;
+  padding: 5px 0 5px 0;
+  border-radius: 0px 0px 5px 5px;
+}
+
+/* different header colors for different pages */
+
+.bg-color-green {
+  background-color: #00ff002f;
+}
+
+.bg-color-orange {
+  background-color: #ffa6004f;
+}
+
+.bg-color-blue {
+  background-color: #0066ff2f;
 }
 
 /* post/article */
@@ -142,10 +157,19 @@ hr {
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
+  transform: translateY(0) scale(1); /* start on the ground */
+  transition: transform 300ms cubic-bezier(.2,.8,.2,1), background-color 180ms ease;
+  transform-origin: center;
 }
 
+/* remove the looping keyframes; use simple transform on hover so it stays up */
 .link-button:hover {
-  background-color: #0ea400;
+  background-color: #6c6c6c;
+  transform: translateY(-5px) scale(1.03); /* rise and stay while hovered */
+}
+
+.link-button:active {
+  transform: scale(0.95);
 }
 
 .posts-list {
@@ -167,7 +191,7 @@ hr {
 }
 
 .posts-list-item:hover {
-  background-color: #0ea400;
+  background-color: #00ff002f;
 }
 
 
@@ -190,6 +214,7 @@ hr {
   color: #fff;
   display: inline-block;
   will-change: transform;
+  padding: 0 0 0 10px;
 }
 
 /* small shake animation on hover for the site title */
@@ -207,7 +232,6 @@ hr {
 .site-title:hover {
   animation: site-shake 1s cubic-bezier(.36,.07,.19,.97);
 }
-
 
 .info-wrapper {
   display: flex;
@@ -288,8 +312,8 @@ hr {
   justify-content: space-between;
   margin: auto 0 0 0;
   padding: 30px 10px 20px 10px;
-  background-color: #0000004f;
-  border-radius: 5px;
+  /* background-color: #0000004f; */
+  border-radius: 5px 5px 0px 0px;
 }
 
 .footer a {
