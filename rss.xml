@@ -4,9 +4,9 @@
         <description><![CDATA[A blog about programming and web development.]]></description>
         <link>https://yourdomain.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 26 Oct 2025 08:45:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Nov 2025 17:21:41 GMT</lastBuildDate>
         <atom:link href="https://yourdomain.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 26 Oct 2025 08:45:02 GMT</pubDate>
+        <pubDate>Fri, 14 Nov 2025 17:21:41 GMT</pubDate>
         <copyright><![CDATA[Copyright 2025 My Blog]]></copyright>
         <language><![CDATA[en]]></language>
         <category><![CDATA[Technology]]></category>
@@ -39,6 +39,15 @@
             <pubDate>Sat, 18 Oct 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Make Your Own Digital Garden]]></title>
+            <description><![CDATA[A breezy way to tag your research or learning notes is with the digital garden system.]]></description>
+            <link>https://yourdomain.com/post/make-your-own-digital-garden</link>
+            <guid isPermaLink="false">https://yourdomain.com/post/make-your-own-digital-garden</guid>
+            <category><![CDATA[seedling]]></category>
+            <dc:creator><![CDATA[Anonymous]]></dc:creator>
+            <pubDate>Fri, 14 Nov 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Rule of Three for Books]]></title>
             <description><![CDATA[You should have an easy, medium, and difficult book to read.]]></description>
             <link>https://yourdomain.com/post/rule-of-three-for-books</link>
@@ -46,6 +55,15 @@
             <category><![CDATA[reading]]></category>
             <dc:creator><![CDATA[Anonymous]]></dc:creator>
             <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Writing Down Flaws is Counterproductive]]></title>
+            <description><![CDATA[It's bad to write down and constantly think about your flaws because you will think about them on a daily basis.]]></description>
+            <link>https://yourdomain.com/post/writing-down-flaws-is-counterproductive</link>
+            <guid isPermaLink="false">https://yourdomain.com/post/writing-down-flaws-is-counterproductive</guid>
+            <category><![CDATA[halloween]]></category>
+            <dc:creator><![CDATA[Anonymous]]></dc:creator>
+            <pubDate>Fri, 31 Oct 2025 00:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
