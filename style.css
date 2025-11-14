@@ -188,7 +188,26 @@ hr {
 
 .site-title {
   color: #fff;
+  display: inline-block;
+  will-change: transform;
 }
+
+/* small shake animation on hover for the site title */
+@keyframes site-shake {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-3px) rotate(-1deg); }
+  20% { transform: translateX(3px) rotate(1deg); }
+  30% { transform: translateX(-3px) rotate(-1deg); }
+  40% { transform: translateX(3px) rotate(1deg); }
+  60% { transform: translateX(-1px) rotate(-0.5deg); }
+  80% { transform: translateX(1px) rotate(0.5deg); }
+  100% { transform: translateX(0); }
+}
+
+.site-title:hover {
+  animation: site-shake 1s cubic-bezier(.36,.07,.19,.97);
+}
+
 
 .info-wrapper {
   display: flex;
