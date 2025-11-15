@@ -14,6 +14,7 @@ Don't forget to use `serve` to test your website.
 - [FontAwesome Icons](https://fontawesome.com/) for icons
 - [Unsplash](https://unsplash.com/) for images
 - [GitHub Pages](https://docs.github.com/en/pages) for static-site hosting
+- [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns) for my bg image
 
 ## Future Updates
 

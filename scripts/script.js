@@ -56,7 +56,10 @@ const quotes = [
 
 window.onload = function() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
-  document.querySelector('.random-quote-block').innerText = quotes[randomIndex];
+  const randomQuoteBlock = document.querySelector('.random-quote-block')
+  if (randomQuoteBlock !== null) {
+    randomQuoteBlock.innerText = quotes[randomIndex];
+  }
 };
 
 // easter egg 🥚
