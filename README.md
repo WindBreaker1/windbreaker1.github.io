@@ -26,4 +26,5 @@ Don't forget to use `serve` to test your website.
 
 - [Dota 2 site](https://www.dota2.com/home)
 - [Valve site](https://www.valvesoftware.com/en/)
+- [Osu site](https://osu.ppy.sh/)
 

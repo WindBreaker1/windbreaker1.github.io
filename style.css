@@ -205,9 +205,12 @@ hr {
 
 .site-title {
   color: #fff;
+  background-color: #0ea400;
+  border-radius: 5px;
   display: inline-block;
   will-change: transform;
-  padding: 0 0 0 10px;
+  padding: 0 5px 0 5px;
+  margin: 0 0 0 10px;
 }
 
 /* small shake animation on hover for the site title */
