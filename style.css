@@ -213,6 +213,10 @@ hr {
   margin: 0 0 0 10px;
 }
 
+.site-title:hover {
+  color: #fff;
+}
+
 /* small shake animation on hover for the site title */
 @keyframes site-shake {
   0% { transform: translateX(0); }
