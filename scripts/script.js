@@ -62,4 +62,26 @@ window.onload = function() {
   }
 };
 
+// hamburger menu toggle
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.header-nav');
+
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // optional: close menu when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!nav.classList.contains('open')) return;
+    if (toggle.contains(e.target) || nav.contains(e.target)) return;
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
 // easter egg 🥚

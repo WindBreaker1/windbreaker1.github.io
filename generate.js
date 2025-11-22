@@ -66,16 +66,14 @@ const listItems = fs.readdirSync(CONTENT_DIR)
     return {
       date,
       html: 
-      `<li>
-        <a class="posts-list-item" href="/post/${cleanedUrl}">
+      ` <a class="posts-list-item" href="/post/${cleanedUrl}">
           <img class="post-image" src="${image}" alt="">
           <div class="post-info">
             <h3>${title}</h3>
             <h4>Published: ${frontmatter.date}</h4>
             <p>${description}</p>
           </div>
-        </a>
-      </li>`
+        </a>`
     };
   })
   .sort((a, b) => b.date - a.date) // Sort by date: latest first
