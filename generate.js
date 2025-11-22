@@ -22,7 +22,7 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
     .replace(/{{tags}}/g, frontmatter.tags || '')
     .replace(/{{date}}/g, frontmatter.date)
     .replace(/{{icon}}/g, frontmatter.icon || '../images/scroll-text.svg')
-    .replace(/{{image}}/g, frontmatter.image || '../images/anime-walkman.gif')
+    .replace(/{{image}}/g, frontmatter.image || '../images/default-posts-list-image.png')
     .replace(/{{content}}/g, htmlContent);
 
   const slug = file.replace('.md', '.html');
