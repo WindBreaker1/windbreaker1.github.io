@@ -59,13 +59,23 @@ const listItems = fs.readdirSync(CONTENT_DIR)
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
     const icon = frontmatter.icon || '../images/scroll-text.svg';
-    const image = frontmatter.image || '../images/anime-walkman.gif';
+    const image = frontmatter.image || '../images/default-posts-list-image.png';
     const description = frontmatter.description || '';
     const date = frontmatter.date ? new Date(frontmatter.date) : new Date(0);
     
     return {
       date,
-      html: `<li class="posts-list-item"><a href="/post/${cleanedUrl}"><img class="icon" src="${icon}" alt=""><h3>${title}</h3><h4>Published: ${frontmatter.date}</h4><p>${description}</p></a></li>`
+      html: 
+      `<li>
+        <a class="posts-list-item" href="/post/${cleanedUrl}">
+          <img class="post-image" src="${image}" alt="">
+          <div class="post-info">
+            <h3>${title}</h3>
+            <h4>Published: ${frontmatter.date}</h4>
+            <p>${description}</p>
+          </div>
+        </a>
+      </li>`
     };
   })
   .sort((a, b) => b.date - a.date) // Sort by date: latest first

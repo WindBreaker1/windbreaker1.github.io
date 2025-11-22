@@ -4,7 +4,7 @@ date: "2025-11-14"
 tags: "seedling"
 description: "A breezy way to tag your research or learning notes is with the digital garden system."
 icon: "../images/tree.svg"
-image: "../images/sapling"
+image: "../images/sapling.jpg"
 ---
 
 A breezy way to tag your research or learning notes is with the digital garden system.

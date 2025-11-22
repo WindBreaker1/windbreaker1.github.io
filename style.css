@@ -202,19 +202,20 @@ hr {
 
 .posts-list-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 12px;
   background-color: #000000cf;
   margin: 0;
   padding: 10px;
-  max-height: 150px;
   border-radius: 5px;
-  text-overflow: ellipsis;
+  overflow: hidden;
+  align-items: stretch; /* let image and info expand vertically together */
+  min-height: 110px;
 }
 
 .posts-list-item:hover {
   background-color: #084f08;
 }
-
 
 .posts-list-item a,
 .posts-list-item p,
@@ -227,6 +228,23 @@ hr {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+  color: #fff;
+}
+
+.post-image {     
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding-left: 6px;
   color: #fff;
 }
 
@@ -361,6 +379,23 @@ hr {
 
   .article {
     padding: 30px 10px;
+  }
+
+   .posts-list-item {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .post-image {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+    height: 180px; /* choose a comfortable height for stacked layout */
+    margin-bottom: 8px;
+  }
+
+  .post-info {
+    padding-left: 0;
   }
 
   .footer {
