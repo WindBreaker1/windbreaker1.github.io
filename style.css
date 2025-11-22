@@ -97,9 +97,36 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
-  margin:   0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   padding: 5px 0 5px 0;
+}
+
+.site-title {
+  color: #fff;
+  background-color: #0ea400;
+  border-radius: 5px;
+  display: inline-block;
+  will-change: transform;
+  padding: 0 5px 0 5px;
+  margin: 0 0 0 10px;
+}
+
+.site-title:hover {
+  color: #fff;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+}
+
+.header-nav a {
+  color: #fff;
 }
 
 /* different header colors for different pages */
@@ -202,20 +229,6 @@ hr {
   color: #fff;
 }
 
-
-.site-title {
-  color: #fff;
-  background-color: #0ea400;
-  border-radius: 5px;
-  display: inline-block;
-  will-change: transform;
-  padding: 0 5px 0 5px;
-  margin: 0 0 0 10px;
-}
-
-.site-title:hover {
-  color: #fff;
-}
 
 /* small shake animation on hover for the site title */
 @keyframes site-shake {
