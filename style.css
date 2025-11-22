@@ -186,7 +186,7 @@ hr {
 /* remove the looping keyframes; use simple transform on hover so it stays up */
 .link-button:hover {
   background-color: #323232dc;
-  transform: translateY(-5px) scale(1.03); /* rise and stay while hovered */
+  animation: site-shake 1s;
 }
 
 .link-button:active {
@@ -233,18 +233,17 @@ hr {
 
 /* small shake animation on hover for the site title */
 @keyframes site-shake {
-  0% { transform: translateX(0); }
-  10% { transform: translateX(-3px) rotate(-1deg); }
-  20% { transform: translateX(3px) rotate(1deg); }
-  30% { transform: translateX(-3px) rotate(-1deg); }
-  40% { transform: translateX(3px) rotate(1deg); }
-  60% { transform: translateX(-1px) rotate(-0.5deg); }
-  80% { transform: translateX(1px) rotate(0.5deg); }
+  0%   { transform: translateX(0); }
+  15%  { transform: translateX(-6px) rotate(-1deg); }
+  30%  { transform: translateX(6px)  rotate(1deg);  }
+  45%  { transform: translateX(-4px) rotate(-0.6deg); }
+  60%  { transform: translateX(4px)  rotate(0.6deg);  }
+  80%  { transform: translateX(-1px) rotate(-0.25deg); }
   100% { transform: translateX(0); }
 }
 
 .site-title:hover {
-  animation: site-shake 1s cubic-bezier(.36,.07,.19,.97);
+  animation: site-shake 1s;
 }
 
 .info-wrapper {
