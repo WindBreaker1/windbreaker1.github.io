@@ -484,12 +484,11 @@ hr {
     border-radius: 4px;
   }
 
-
   .article {
     padding: 30px 10px;
   }
 
-   .posts-list-item {
+  .posts-list-item {
     flex-direction: column;
     min-height: auto;
   }
@@ -504,6 +503,10 @@ hr {
 
   .post-info {
     padding-left: 0;
+  }
+
+  .project-container {
+    flex-direction: column;
   }
 
   .footer {
