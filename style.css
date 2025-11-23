@@ -509,6 +509,11 @@ hr {
     flex-direction: column;
   }
 
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
   .footer {
     flex-direction: column;
     gap: 10px;
