@@ -101,7 +101,7 @@ hr {
   background-color: #000000dc;
   gap: 10px;
   margin: 0px 0px 0px 0px;
-  padding: 5px 0 20px 0;
+  padding: 5px 0 10px 0;
   position: relative;
 }
 
@@ -191,19 +191,29 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  width: fit-content;
   background-color: #000000dc;
   color: inherit;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 15px;
   transform: translateY(0) scale(1); /* start on the ground */
   transition: transform 300ms cubic-bezier(.2,.8,.2,1), background-color 180ms ease;
   transform-origin: center;
 }
 
-/* remove the looping keyframes; use simple transform on hover so it stays up */
+.link-button a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
 .link-button:hover {
   background-color: #323232dc;
   animation: site-shake 1s;
@@ -323,31 +333,73 @@ hr {
 .main-page {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: 50dvh;
   max-width: 800px;
   margin: 10px auto;
   padding: 0 20px;
   gap: 20px;
 }
 
-.main-page-section1 {
+/* project container */
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #000000dc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project-image {
+  width: 400px;
+  height: 150px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/anime-rain-bucket.gif");
   background-size: cover;
-  background-image:
-    linear-gradient(#00000073, #00000073),
-    url("../images/anime-rain-bucket.gif");
   padding: 20px;
   height: 500px;
 }
 
-.section1-text {
+.hero-section-text {
   color: #fff;
   font-size: 48px;
   font-weight: bold;
 }
+
+/* Individual gifs for hero sections */
+
+#home-hero-section {
+  background-image:
+    linear-gradient(#000000ab, #000000ab),
+    url("/images/anime-rain-bucket.gif");
+}
+
+#blog-hero-section {
+  background-image:
+    linear-gradient(#000000ab, #000000ab),
+    url("/images/mc-sunset.gif");
+}
+
+#novels-hero-section {
+  background-image:
+    linear-gradient(#000000ab, #000000ab),
+    url("/images/notebook-writing.gif");
+}
+
+/* misc */
 
 .simple-flex-center {
   display: flex;

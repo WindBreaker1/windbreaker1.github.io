@@ -4,58 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
-  <meta name="keywords" content="home page">
+  <meta name="keywords" content="blog page">
   <meta name="author" content="a.b.agora">
   <meta name="robots" content="index, follow">
   <link rel="icon" href="/images/abagora-icon.png" type="image/png">
-  <title>abagora</title>
-  <meta name="description" content="Home Page">
+  <title>Blog | abagora</title>
+  <meta name="description" content="Blog Page">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
 </head>
 <body class="page-wrapper">
   <header class="header">
-
     <h1><a class="site-title" href="/">a.b.agora</a></h1>
-
-    <!-- Menu toggle for small screens -->
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-header-nav" title="Open menu">
-      <img src="../images/square-menu.svg" alt="">
-    </button>
-
+      <!-- Menu toggle for small screens -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-header-nav" title="Open menu">
+        <img src="../images/square-menu.svg" alt="">
+      </button>
     <nav class="header-nav">
-      <button class="link-button">
-        <a href="/page/novels">
-          <img src="/images/book-a.svg" alt="">
-          <div>Novels</div>
-        </a>
-      </button>
-      <button class="link-button">
-        <a href="/page/blog">
-          <img src="/images/bell-dot.svg" alt="">
-          <div>Blog</div>
-        </a>
-      </button>
-      <button class="link-button">
-        <a href="/page/about">
+      <a href="/page/media-garden">
+        <button class="link-button">
+          <img src="/images/flower-2.svg" alt="">
+          <div>Media Garden</div>
+        </button>
+      </a>
+      <a href="/page/about">
+        <button class="link-button">
           <img src="/images/info.svg" alt="">
           <div>About</div>
-        </a>
-      </button>
+        </button>
+      </a>
     </nav>
-
   </header>
   
-  <div class="hero-section" id="home-hero-section">
-    <div class="hero-section-text">I combine art and engineering to make cool stuff.</div>
+  <div class="hero-section" id="blog-hero-section">
+    <div class="hero-section-text">My Personal Blog</div>
   </div>
-
+  
   <div class="main-page">
-
-    <h2>Favorite Quotes</h2>
-    <blockquote class="random-quote-block"></blockquote>
     
-    <h2>Recent Blog Posts</h2>
-        
+    <h2>Posts List</h2>
+  
+    <p>From latest to oldest.</p>
+
     <ul class="posts-list">
  <a class="posts-list-item" href="/post/make-your-own-digital-garden">
           <img class="post-image" src="../images/sapling.jpg" alt="">
@@ -97,42 +86,43 @@
             <p>A list of Linux Terminal commands.</p>
           </div>
         </a>
+ <a class="posts-list-item" href="/post/linux">
+          <img class="post-image" src="../images/default-posts-list-image.png" alt="">
+          <div class="post-info">
+            <h3>Linux</h3>
+            <h4>Published: 2025-10-18</h4>
+            <p>A few resources on Linux.</p>
+          </div>
+        </a>
 </ul>
-    
-  <button class="link-button">
-    <a href="/page/blog">
-      <img src="/images/bell-dot.svg" alt="">
-      <div>Read More</div>
-    </a>
-  </button>
 
   </div>
 
   <footer class="footer bg-color-green">
     <nav class="footer-section">
       <h3>Pages</h3>
-      <button class="link-button">
-        <a href="/page/media-garden">
+      <a href="/page/media-garden">
+        <button class="link-button">
           <img src="/images/flower-2.svg" alt="">
           <div>Media Garden</div>
-        </a>
-      </button>
-      <button class="link-button">
-        <a href="/page/about">
+        </button>
+      </a>
+      <a href="/page/about">
+        <button class="link-button">
           <img src="/images/info.svg" alt="">
           <div>About</div>
-        </a>
-      </button>
+        </button>
+      </a>
     </nav>
 
     <nav class="footer-section">
       <h3>Miscellaneous</h3>
-      <button class="link-button">
-        <a href="/rss.xml" target="_blank">
+      <a href="/rss.xml" target="_blank">
+        <button class="link-button">
           <img src="/images/rss.svg" alt="">
           Subscribe to RSS
-        </a>
-      </button>
+        </button>
+      </a>
       <button class="link-button" id="translateButton">
         <img src="/images/languages.svg" alt="">
         Toggle Translation

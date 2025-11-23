@@ -40,12 +40,16 @@ fs.readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md')).forEach(file => {
 
 const OUTPUT_DIR2 = path.join(__dirname, '/');
 
-const indexPath = path.join(OUTPUT_DIR2, 'index.html');
+const targetFiles = [
+  'index.html',
+  'page/blog.html',
+];
 
 // List of all posts
 const outputFiles = fs.readdirSync(OUTPUT_DIR).filter(f => f.endsWith('.html'));
 
-const listItems = fs.readdirSync(CONTENT_DIR)
+// Build list of all posts with metadata
+const allPosts = fs.readdirSync(CONTENT_DIR)
   .filter(f => f.endsWith('.md'))
   .map(file => {
     const filePath = path.join(CONTENT_DIR, file);
@@ -76,19 +80,37 @@ const listItems = fs.readdirSync(CONTENT_DIR)
         </a>`
     };
   })
-  .sort((a, b) => b.date - a.date) // Sort by date: latest first
+  .sort((a, b) => b.date - a.date); // Sort by date: latest first
+
+// All posts list (for blog page)
+const listItems = allPosts
   .map(item => item.html)
   .join('\n');
 
-// Read existing index.html
-let indexContent = fs.readFileSync(indexPath, 'utf8');
+// Recent posts list (for home page, top 5 only)
+const recentListItems = allPosts
+  .slice(0, 5)
+  .map(item => item.html)
+  .join('\n');
 
-// Replace a placeholder or inject into a container (e.g., <div id="posts"></div>)
-// The [\s\S]*? pattern matches any character (including newlines) non-greedily, so it handles any formatting inside the tags.
-indexContent = indexContent.replace(
-  /<ul class="posts-list">[\s\S]*?<\/ul>/,
-  `<ul class="posts-list">\n${listItems}\n</ul>`
-);
+// Inject the generated posts lists into each target file
+const postsListRegex = /<ul class="posts-list">[\s\S]*?<\/ul>/i;
 
-// Save updated index.html
-fs.writeFileSync(indexPath, indexContent);
+targetFiles.forEach(relPath => {
+  const filePath = path.join(OUTPUT_DIR2, relPath);
+  if (!fs.existsSync(filePath)) {
+    console.warn(`Skipping missing file: ${relPath}`);
+    return;
+  }
+
+  let fileContent = fs.readFileSync(filePath, 'utf8');
+  if (postsListRegex.test(fileContent)) {
+    // Use recent list for home page, full list for blog page
+    const listToUse = relPath === 'index.html' ? recentListItems : listItems;
+    fileContent = fileContent.replace(postsListRegex, `<ul class="posts-list">\n${listToUse}\n</ul>`);
+    fs.writeFileSync(filePath, fileContent, 'utf8');
+    console.log(`Updated posts-list in: ${relPath}`);
+  } else {
+    console.warn(`No <ul class="posts-list"> container found in ${relPath}; skipping.`);
+  }
+});
