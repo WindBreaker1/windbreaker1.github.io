@@ -19,14 +19,16 @@ Don't forget to use `serve` to test your website.
 
 ## Future Updates
 
+- [ ] Import apps to apps page.
+- [ ] Add contact email.
 - [ ] Add social links.
 - [ ] Add email list.
-- [ ] Upgrade to React.
 
 ## Website Inspirations:
 
 - [Dota 2 site](https://www.dota2.com/home)
 - [Valve site](https://www.valvesoftware.com/en/)
+- [Old Steam site](https://web.archive.org/web/20081201082902/http://store.steampowered.com/)
 - [Osu site](https://osu.ppy.sh/)
 - [Facepunch site](https://facepunch.com/)
 

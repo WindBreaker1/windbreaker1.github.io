@@ -421,13 +421,6 @@ hr {
 
 /* misc */
 
-.simple-flex-center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-}
-
 /* footer */
 
 .footer {
