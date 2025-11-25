@@ -14,27 +14,50 @@
 </head>
 <body class="page-wrapper">
   <header class="header">
+
     <h1><a class="site-title" href="/">a.b.agora</a></h1>
-      <!-- Menu toggle for small screens -->
-      <button class="menu-toggle" aria-expanded="false" aria-controls="site-header-nav" title="Open menu">
-        <!-- simple hamburger svg -->
-        <img src="../images/square-menu.svg" alt="">
-      </button>
+
+    <!-- Menu toggle for small screens -->
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-header-nav" title="Open menu">
+      <img src="../images/square-menu.svg" alt="">
+    </button>
+
     <nav class="header-nav">
-      <a href="/page/media-garden">
-        <button class="link-button">
-          <img src="/images/flower-2.svg" alt="">
-          <div>Media Garden</div>
-        </button>
-      </a>
-      <a href="/page/about">
-        <button class="link-button">
+      <button class="link-button">
+        <a href="/page/novels">
+          <img src="/images/book-a.svg" alt="">
+          <div>Novels</div>
+        </a>
+      </button>
+      <button class="link-button">
+        <a href="/page/games">
+          <img src="/images/gamepad-2.svg" alt="">
+          <div>Games</div>
+        </a>
+      </button>
+      <button class="link-button">
+        <a href="/page/apps">
+          <img src="/images/code.svg" alt="">
+          <div>Apps</div>
+        </a>
+      </button>
+      <button class="link-button">
+        <a href="/page/blog">
+          <img src="/images/bell-dot.svg" alt="">
+          <div>Blog</div>
+        </a>
+      </button>
+      <button class="link-button">
+        <a href="/page/about">
           <img src="/images/info.svg" alt="">
           <div>About</div>
-        </button>
-      </a>
+        </a>
+      </button>
     </nav>
+
   </header>
+
+  <div class="under-header-section"></div>
 
   <div class="main-page">
     <div class="post-title-section">
@@ -76,37 +99,72 @@
 </article>
   </div>
 
-  <footer class="footer bg-color-green">
-    <nav class="footer-section">
-      <h3>Pages</h3>
-      <a href="/page/media-garden">
-        <button class="link-button">
-          <img src="/images/flower-2.svg" alt="">
-          <div>Media Garden</div>
-        </button>
-      </a>
-      <a href="/page/about">
-        <button class="link-button">
-          <img src="/images/info.svg" alt="">
-          <div>About</div>
-        </button>
-      </a>
-    </nav>
+  <footer class="footer">
 
-    <nav class="footer-section">
-      <h3>Miscellaneous</h3>
-      <a href="/rss.xml" target="_blank">
+    <div class="footer-high-section">
+      <nav class="footer-section">
+        <h3>Projects</h3>
         <button class="link-button">
-          <img src="/images/rss.svg" alt="">
-          Subscribe to RSS
+          <a href="/page/novels">
+            <img src="/images/book-a.svg" alt="">
+            <div>Novels</div>
+          </a>
         </button>
-      </a>
-      <button class="link-button" id="translateButton">
-        <img src="/images/languages.svg" alt="">
-        Toggle Translation
-      </button>
-      <div id="google_translate_element" style="display: none;"></div>
-    </nav>
+        <button class="link-button">
+          <a href="/page/games">
+            <img src="/images/gamepad-2.svg" alt="">
+            <div>Games</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/apps">
+            <img src="/images/code.svg" alt="">
+            <div>Apps</div>
+          </a>
+        </button>
+      </nav>
+      <nav class="footer-section">
+        <h3>Pages</h3>
+        <button class="link-button">
+          <a href="/page/blog">
+            <img src="/images/bell-dot.svg" alt="">
+            <div>Blog</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/about">
+            <img src="/images/info.svg" alt="">
+            <div>About</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/media-garden">
+            <img src="/images/flower-2.svg" alt="">
+            <div>Media Garden</div>
+          </a>
+        </button>
+      </nav>
+      <nav class="footer-section">
+        <h3>Miscellaneous</h3>
+        <button class="link-button">
+          <a href="/rss.xml" target="_blank">
+            <img src="/images/rss.svg" alt="">
+            Subscribe to RSS
+          </a>
+        </button>
+        <button class="link-button" id="translateButton">
+          <img src="/images/languages.svg" alt="">
+          Toggle Translation
+        </button>
+        <div id="google_translate_element" style="display: none;"></div>
+      </nav>
+    </div>
+
+    <div class="footer-low-section">
+      <p>Made with &hearts;.</p>
+      <p>Copyright &copy; <span id="current-year"></span> abagora. All rights reserved.</p>
+    </div>
+
   </footer>
 
   <script src="/scripts/google-translate.js"></script>

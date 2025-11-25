@@ -15,6 +15,7 @@ Don't forget to use `serve` to test your website.
 - [Unsplash](https://unsplash.com/) for images
 - [GitHub Pages](https://docs.github.com/en/pages) for static-site hosting
 - [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns) for my bg image
+- [National Gallery of Art](https://www.nga.gov/artwork-search?download=1)
 
 ## Future Updates
 
@@ -28,4 +29,6 @@ Don't forget to use `serve` to test your website.
 - [Valve site](https://www.valvesoftware.com/en/)
 - [Osu site](https://osu.ppy.sh/)
 - [Facepunch site](https://facepunch.com/)
+
+## Design Philosophy Behind the Site
 

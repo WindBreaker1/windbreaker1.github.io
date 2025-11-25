@@ -84,4 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Current year for footer copyright
+
+const currentYear = new Date().getFullYear();
+document.getElementById('current-year').textContent = currentYear;
+
 // easter egg 🥚

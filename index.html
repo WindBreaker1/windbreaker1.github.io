@@ -61,10 +61,54 @@
     <div class="hero-section-text">I combine art and engineering to make cool stuff.</div>
   </div>
 
-  <div class="main-page">
+  <div class="hero-section" id="novels-hero-section">
+    <div class="hero-section-text">Latest Novel</div>
+    <div class="project-container">
+      <img class="project-image" src="/images/seeker-cover.png" alt="">
+      <div class="project-details">
+        <h2 class="project-title">Seeker</h2>
+        <p class="project-description">Seeker is a thriller/mystery novel about a paranormal detective, Harvey Janus, that is forced to take down the last of his criminal family to reclaim his freedom. It is a family drama wrapped in a supernatural veneer.</p>
+        <p class="project-description">Status: Currently Writing</p>
+      </div>
+    </div>
+    <button class="link-button">
+      <a href="/page/novels">
+        <img src="/images/bell-dot.svg" alt="">
+        <div>Check Out More</div>
+      </a>
+    </button>
+  </div>
 
-    <h2>Favorite Quotes</h2>
-    <blockquote class="random-quote-block"></blockquote>
+  <div class="hero-section" id="games-hero-section">
+    <div class="hero-section-text">Latest Game</div>
+    <div class="project-container">
+      <img class="project-image" src="/images/photo-dice.jpg" alt="">
+      <div class="project-details">
+        <h2 class="project-title">Project C</h2>
+        <p class="project-description">Project C is a card-based dungeon crawler inspired by Slay the Spire and Balatro.</p>
+        <p class="project-description">Status: In Progress</p>
+      </div>
+    </div>
+    <button class="link-button">
+      <a href="/page/games">
+        <img src="/images/bell-dot.svg" alt="">
+        <div>Check Out More</div>
+      </a>
+    </button>
+  </div>
+
+  <div class="hero-section" id="apps-hero-section">
+    <div class="hero-section-text">Latest App</div>
+    <div class="hero-section-text">N/A</div>
+    <button class="link-button">
+      <a href="/page/apps">
+        <img src="/images/bell-dot.svg" alt="">
+        <div>Check Out More</div>
+      </a>
+    </button>
+  </div>
+
+  <div class="main-page">
     
     <h2>Recent Blog Posts</h2>
         
@@ -120,37 +164,72 @@
 
   </div>
 
-  <footer class="footer bg-color-green">
-    <nav class="footer-section">
-      <h3>Pages</h3>
-      <button class="link-button">
-        <a href="/page/media-garden">
-          <img src="/images/flower-2.svg" alt="">
-          <div>Media Garden</div>
-        </a>
-      </button>
-      <button class="link-button">
-        <a href="/page/about">
-          <img src="/images/info.svg" alt="">
-          <div>About</div>
-        </a>
-      </button>
-    </nav>
+  <footer class="footer">
 
-    <nav class="footer-section">
-      <h3>Miscellaneous</h3>
-      <button class="link-button">
-        <a href="/rss.xml" target="_blank">
-          <img src="/images/rss.svg" alt="">
-          Subscribe to RSS
-        </a>
-      </button>
-      <button class="link-button" id="translateButton">
-        <img src="/images/languages.svg" alt="">
-        Toggle Translation
-      </button>
-      <div id="google_translate_element" style="display: none;"></div>
-    </nav>
+    <div class="footer-high-section">
+      <nav class="footer-section">
+        <h3>Projects</h3>
+        <button class="link-button">
+          <a href="/page/novels">
+            <img src="/images/book-a.svg" alt="">
+            <div>Novels</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/games">
+            <img src="/images/gamepad-2.svg" alt="">
+            <div>Games</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/apps">
+            <img src="/images/code.svg" alt="">
+            <div>Apps</div>
+          </a>
+        </button>
+      </nav>
+      <nav class="footer-section">
+        <h3>Pages</h3>
+        <button class="link-button">
+          <a href="/page/blog">
+            <img src="/images/bell-dot.svg" alt="">
+            <div>Blog</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/about">
+            <img src="/images/info.svg" alt="">
+            <div>About</div>
+          </a>
+        </button>
+        <button class="link-button">
+          <a href="/page/media-garden">
+            <img src="/images/flower-2.svg" alt="">
+            <div>Media Garden</div>
+          </a>
+        </button>
+      </nav>
+      <nav class="footer-section">
+        <h3>Miscellaneous</h3>
+        <button class="link-button">
+          <a href="/rss.xml" target="_blank">
+            <img src="/images/rss.svg" alt="">
+            Subscribe to RSS
+          </a>
+        </button>
+        <button class="link-button" id="translateButton">
+          <img src="/images/languages.svg" alt="">
+          Toggle Translation
+        </button>
+        <div id="google_translate_element" style="display: none;"></div>
+      </nav>
+    </div>
+
+    <div class="footer-low-section">
+      <p>Made with &hearts;.</p>
+      <p>Copyright &copy; <span id="current-year"></span> abagora. All rights reserved.</p>
+    </div>
+
   </footer>
   
   <script src="/scripts/google-translate.js"></script>
