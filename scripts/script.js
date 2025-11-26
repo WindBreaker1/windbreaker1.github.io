@@ -89,4 +89,14 @@ document.addEventListener('DOMContentLoaded', function () {
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
 
+// email obfuscation
+
+(function obfuscateEmail() {
+  const link = document.querySelector('.email-link');
+  const email = atob(link.getAttribute('data-contact'));
+  
+  link.href = "mailto:" + email;
+  link.innerText = email;
+})();
+
 // easter egg 🥚
