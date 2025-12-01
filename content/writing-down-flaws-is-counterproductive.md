@@ -3,7 +3,7 @@ title: "Writing Down Flaws is Counterproductive"
 date: "2025-10-31"
 tags: "halloween"
 description: "It's bad to write down and constantly think about your flaws because you will think about them on a daily basis."
-icon: "../images/scroll-text.svg"
+icon: "/images/scroll-text.svg"
 image: "https://images.unsplash.com/photo-1638537690581-dc2192bfc7dd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHx3cml0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=400"
 ---
 

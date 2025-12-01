@@ -3,7 +3,7 @@ title: "Linux Terminal Commands"
 date: "2025-10-18"
 tags: "linux"
 description: "A list of Linux Terminal commands."
-icon: ""
+image: "/images/linux-terminal.jpg"
 ---
 
 Part of the [[Linux]] sub stack of notes.

@@ -6,6 +6,7 @@
   --light-bg-color: #2f3e2b;
   --dark-primary-color: #23311f;
   --dark-secondary-color: #1b2618;
+  --gradient-color: linear-gradient(#00000061, #00000061);
 }
 
 * {
@@ -222,6 +223,7 @@ hr {
 .link-button:hover {
   background-color: var(--header-bg-color);
   animation: site-shake 1s;
+  color: inherit;
 }
 
 .link-button:active {
@@ -391,32 +393,32 @@ hr {
 
 #home-hero-section {
   background-image:
-    linear-gradient(#000000ab, #000000ab),
-    url("/images/anime-rain-bucket.gif");
+    var(--gradient-color),
+    url("/images/triumph-of-the-amazons-claude-deruet.jpg");
 }
 
 #blog-hero-section {
   background-image:
-    linear-gradient(#000000ab, #000000ab),
-    url("/images/mc-sunset.gif");
+    var(--gradient-color),
+    url("/images/musical-gathering-peter-horemans.jpg");
 }
 
 #novels-hero-section {
   background-image:
-    linear-gradient(#000000ab, #000000ab),
-    url("/images/photo-reading-book.jpg");
+    var(--gradient-color),
+    url("/images/king-lear-edwin-abbey.jpg");
 }
 
 #games-hero-section {
   background-image:
-    linear-gradient(#000000ab, #000000ab),
-    url("/images/photo-controller.jpg");
+    var(--gradient-color),
+    url("images/trojan-women-fleet-claude-lorrain.jpg");
 }
 
 #apps-hero-section {
   background-image:
-    linear-gradient(#000000ab, #000000ab),
-    url("/images/photo-leaf-laptop.jpg");
+    var(--gradient-color),
+    url("/images/view-over-hallingdal-johan-dahl.jpg");
 }
 
 /* misc */

@@ -3,7 +3,7 @@ title: "Rule of Three for Books"
 date: "2025-10-19"
 tags: "reading"
 description: "You should have an easy, medium, and difficult book to read."
-icon: "https://images.unsplash.com/photo-1554538856-6157578784a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+image: "https://images.unsplash.com/photo-1554538856-6157578784a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
 ---
 
 ![japanese-books](https://images.unsplash.com/photo-1554538856-6157578784a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170)
