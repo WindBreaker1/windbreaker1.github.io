@@ -372,6 +372,19 @@ hr {
   color: #fff;
 }
 
+/* mini project container */
+
+.mini-project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--dark-secondary-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* hero section */
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -538,6 +551,12 @@ hr {
   .project-image {
     width: 100%;
     height: auto;
+    max-height: 300px;
+  }
+
+  .hero-section {
+    min-height: 400px;
+    height: fit-content;
   }
 
   .footer-high-section {
