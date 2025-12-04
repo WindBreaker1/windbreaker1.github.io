@@ -4,9 +4,9 @@
         <description><![CDATA[A blog about programming and web development.]]></description>
         <link>https://abagora.com/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 26 Nov 2025 12:16:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Dec 2025 07:54:45 GMT</lastBuildDate>
         <atom:link href="https://abagora.com//rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 26 Nov 2025 12:16:33 GMT</pubDate>
+        <pubDate>Thu, 04 Dec 2025 07:54:45 GMT</pubDate>
         <copyright><![CDATA[Copyright 2025 My Blog]]></copyright>
         <language><![CDATA[en]]></language>
         <category><![CDATA[Technology]]></category>
@@ -55,6 +55,15 @@
             <category><![CDATA[reading]]></category>
             <dc:creator><![CDATA[Anonymous]]></dc:creator>
             <pubDate>Sun, 19 Oct 2025 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What Makes Time Valuable?]]></title>
+            <description><![CDATA[People talk about how you should spend your time 'wisely', but what does that really look like?]]></description>
+            <link>https://abagora.com/post/what-makes-time-valuable</link>
+            <guid isPermaLink="false">https://abagora.com/post/what-makes-time-valuable</guid>
+            <category><![CDATA[time_management, productivity]]></category>
+            <dc:creator><![CDATA[Anonymous]]></dc:creator>
+            <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Writing Down Flaws is Counterproductive]]></title>
