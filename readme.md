@@ -1,4 +1,4 @@
-Version 3 of abagora.
+Version 2 of abagora.
 
 ## Info
 
@@ -16,6 +16,7 @@ Version 3 of abagora.
 4. pages = individual pages that are not blog posts
 5. posts = markdown files that get transformed to HTML with the help of [11ty](https://www.11ty.dev/)
 6. scripts = javascript
+7. styles = css styles
 
 ## Resources
 
