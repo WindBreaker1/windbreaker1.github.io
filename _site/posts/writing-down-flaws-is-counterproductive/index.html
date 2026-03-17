@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="/images/letter-a-2.svg" type="image/svg+xml">
+  <meta name="keywords" content="website">
+  <meta name="author" content="A.B. Collins">
+  <meta name="robots" content="index, follow">
+  <title>abagora</title>
+  <meta name="description" content="Writing to further art & tech.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    (function() {
+      const saved = localStorage.getItem("user-theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+  <script src="/scripts/color-changer.js" defer></script>
+  <script src="/scripts/get-current-year.js" defer></script>
+  <script src="/scripts/obfuscate-email.js" defer></script>
+  <script src="/scripts/hamburger-menu.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <nav class="header-nav">
+        <a href="/pages/blog" class="icon-link"><img src="/images/document.svg" class="icon-mono"><h2>Blog</h2></a>
+        <a href="/pages/novels" class="icon-link"><img src="/images/book.svg" class="icon-mono"><h2>Novels</h2></a>
+        <a href="/pages/apps" class="icon-link"><img src="/images/code.svg" class="icon-mono"><h2>Apps</h2></a>
+        <a href="/pages/info" class="icon-link"><img src="/images/info.svg" class="icon-mono"><h2>Info</h2></a>
+        <button class="link-btn" aria-label="Switch Theme">
+          Theme: <span id="current-theme-text">Light</span>
+        </button>
+      </nav>
+    </header>
+    <div class="header-mobile">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <div class="hamburger-menu-btn">
+        <img src="/images/hamburger-menu.svg" class="icon-mono" id="menu-icon">
+      </div>
+    </div>
+    <main>
+      
+<div class="page-for-blog">
+  <img src="https://images.unsplash.com/photo-1638537690581-dc2192bfc7dd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHx3cml0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=400" class="post-banner">
+  <article class="post">
+    <h1 class="post-title">#3. Writing Down Flaws is Counterproductive</h1>
+    <div class="post-info">
+      <div class="post-info-item">
+        <span><img src="/images/tags.svg" class="icon-small"></span>
+        <span>Tags:</span>
+        <span class="tag">writing</span><span class="tag"> psychology</span>
+      </div>
+      <div class="post-info-item">
+        <span><img src="/images/time.svg" class="icon-small"></span>
+        <span>Date Published: 2025-10-31</span>
+      </div>
+    </div>
+    <p>In In <a href="https://www.goodreads.com/book/show/53642699-the-mountain-is-you?ac=1">'The Mountain is You' by Brianna Wiest</a>, she talks about the practice of writing your flaws., she talks about the practice of writing your flaws.</p>
+<p>She believes that writing down your flaws will give you a to-do list on how to fix those things.</p>
+<p>But some things, like your face, you can't really change. Even face-improving surgery is hit or miss.</p>
+<p>It's bad to write down and constantly think about your flaws because you will think about them on a daily basis.</p>
+<p>In my opinion, a better way to go about it is saying &quot;I will go to the gym for an hour tomorrow&quot; instead of &quot;I'm fat, I need to exercise&quot;.</p>
+<p>Both arrive at the same conclusion, but one is better for your own mental health.</p>
+<p>Disgust, insecurity, and anger can be beneficial in feeding the willpower that will change you, but it's not a permanent solution.</p>
+<p>In the end, as cliche as it sounds, discipline is really the best mindset to have.</p>
+
+  </article>
+</div>
+    </main>
+    <footer class="footer">
+      <div class="sitemap">
+        <b>Sitemap:</b>
+        <a href="/">Home</a>
+        <span>✱</span>
+        <a href="/pages/blog">Blog</a>
+        <span>✱</span>
+        <a href="/pages/novels">Novels</a>
+        <span>✱</span>
+        <a href="/pages/apps">Apps</a>
+        <span>✱</span>
+        <a href="/pages/info">Info</a>
+      </div>
+      <p>Made with ♥. Copyright © <span id="current-year"></span> abagora. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

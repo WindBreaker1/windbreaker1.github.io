@@ -1,0 +1,27 @@
+---
+layout: layout.html
+---
+
+<div class="page">
+  <div class="description-section">
+    <h1>Blog</h1>
+    <p>Blog posts in table format, sorted from latest to oldest. Read left to right.</p>
+  </div>
+  <div class="info-card">
+    <p>Disclaimer: I treat this as an online journal. My thoughts may be jumbled, my ideas may be unfinished, and my opinions will inevitably change as I learn more and change as a person.</p>
+  </div>
+  <div class="posts-list">
+    {% assign latest_posts = collections.posts | reverse %}
+    {% for post in latest_posts %}
+      <a href="{{ post.url }}" class="post-card">
+        <img class="card-banner" src="{{ post.data.banner }}">
+        <h3 class="card-title">#{{ post.data.index }}. {{ post.data.title }}</h3>
+        <div class="post-tags">
+          <span>Tags:</span>
+          {% for tag in post.data.tags limit: 2 %}{% if tag != "posts" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
+        </div>
+        <div class="card-description">{{ post.data.description }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>

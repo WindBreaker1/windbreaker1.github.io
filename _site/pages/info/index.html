@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="/images/letter-a-2.svg" type="image/svg+xml">
+  <meta name="keywords" content="website">
+  <meta name="author" content="A.B. Collins">
+  <meta name="robots" content="index, follow">
+  <title>abagora</title>
+  <meta name="description" content="Writing to further art & tech.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    (function() {
+      const saved = localStorage.getItem("user-theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+  <script src="/scripts/color-changer.js" defer></script>
+  <script src="/scripts/get-current-year.js" defer></script>
+  <script src="/scripts/obfuscate-email.js" defer></script>
+  <script src="/scripts/hamburger-menu.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <nav class="header-nav">
+        <a href="/pages/blog" class="icon-link"><img src="/images/document.svg" class="icon-mono"><h2>Blog</h2></a>
+        <a href="/pages/novels" class="icon-link"><img src="/images/book.svg" class="icon-mono"><h2>Novels</h2></a>
+        <a href="/pages/apps" class="icon-link"><img src="/images/code.svg" class="icon-mono"><h2>Apps</h2></a>
+        <a href="/pages/info" class="icon-link"><img src="/images/info.svg" class="icon-mono"><h2>Info</h2></a>
+        <button class="link-btn" aria-label="Switch Theme">
+          Theme: <span id="current-theme-text">Light</span>
+        </button>
+      </nav>
+    </header>
+    <div class="header-mobile">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <div class="hamburger-menu-btn">
+        <img src="/images/hamburger-menu.svg" class="icon-mono" id="menu-icon">
+      </div>
+    </div>
+    <main>
+      <div class="page">
+  <div class="description-section">
+    <h1 class="page-title">Info</h1>
+  </div>
+  <div class="info-card">
+    <p>👋 Hi, my name is A.B. Collins and I:</p>
+    <ul>
+      <li>✍️Write <a href="/pages/novels">fiction and non-fiction</a></li>
+      <li>💻Code <a href="/pages/apps">web, desktop, mobile apps, and video games.</a></li>
+      <li>🪣Share my thoughts through <a href="/pages/blog">my blog.</a></li>
+    </ul>
+    <p>❓Got any questions, observations, or complaints, send them at <a href="#" target="_blank" class="email-link" data-contact="YWJhZ29yYUBwcm90b25tYWlsLmNvbQ==">if mail doesn't appear, refresh</a>. Thank you!</p>
+  </div>
+</div>
+    </main>
+    <footer class="footer">
+      <div class="sitemap">
+        <b>Sitemap:</b>
+        <a href="/">Home</a>
+        <span>✱</span>
+        <a href="/pages/blog">Blog</a>
+        <span>✱</span>
+        <a href="/pages/novels">Novels</a>
+        <span>✱</span>
+        <a href="/pages/apps">Apps</a>
+        <span>✱</span>
+        <a href="/pages/info">Info</a>
+      </div>
+      <p>Made with ♥. Copyright © <span id="current-year"></span> abagora. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

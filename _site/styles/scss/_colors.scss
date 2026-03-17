@@ -1,0 +1,87 @@
+body {
+  background-color: var(--bg-2);
+  color: var(--text-2);
+  transition: background-color 0.2s ease-in-out, color 0.2s;
+}
+
+a {
+  color: var(--text-2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: var(--text-hover);
+}
+
+button {
+  background-color: var(--bg);
+  color: var(--text-2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+code {
+  background-color: var(--text-hover);
+}
+
+blockquote {
+  color: var(--text-2);
+  border-left: 0.3em solid var(--text-hover);
+}
+
+.header, .header-mobile, .footer {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease-in-out, color 0.2s;
+}
+
+.header a, .header-mobile a, .footer a {
+  color: var(--text);
+}
+
+.tag {
+  background-color: var(--tag);
+  color: var(--text);
+}
+
+.link-btn {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#link-btn:hover {
+  background-color: var(--text-hover);
+}
+
+.post-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.post-card:hover {
+  background-color: var(--text-hover);
+}
+
+.main-wrapper {
+  background-color: var(--bg-2);
+}
+
+.description-section {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+#menu-icon, .icon-mono {
+  filter: var(--icon-filter);
+  transition: filter 0.3s ease;
+}
+
+.icon-small {
+  filter: var(--icon-filter-2);
+  transition: filter 0.3s ease;
+}
+
+#change-color-btn:hover {
+  background-color: var(--text-hover);
+}

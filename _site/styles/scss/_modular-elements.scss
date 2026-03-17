@@ -1,0 +1,146 @@
+// ======================== header links =================================== //
+
+.icon-link {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  align-items: center;
+  width: fit-content;
+}
+
+.icon-link:hover {
+  background-color: inherit;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  align-items: center;
+  width: fit-content;
+}
+
+// ================================== in page ================================ //
+
+.description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  width: 100%;
+  padding: 1em;
+  gap: 1em;
+  text-align: center;
+  //background-image: url('/images/triumph-of-the-amazons-claude-deruet.jpg');
+}
+
+// =============================== icon ================================= //
+
+.icon, .icon-mono {
+  width: 34px;
+  height: 34px;
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+}
+
+// ================================== posts ================================ //
+
+.post-banner {
+  max-width: none;
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 0 0 1em 0;
+  border-bottom: 0.3em solid var(--text-2);
+}
+
+.post-info-item, .post-tags {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  overflow: hidden;
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+  gap: 0.5em;
+  padding: 0 0.5em;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3em;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ============================ buttons ============================= //
+
+.link-btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  text-decoration: none;
+}
+
+#change-color-btn {
+  border-radius: 100%;
+}
+
+// =========================== post-card ================================ //
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.5em;
+  text-decoration: none;
+  width: auto;
+  backface-visibility: hidden;
+}
+
+.card-banner {
+  max-width: none;
+  width: 100%;
+  height: 8em;
+  object-fit: cover;
+}
+
+.card-description, .card-title {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ===================== hamburger-menu =========================== //
+
+.hamburger-menu-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  width: fit-content;
+}
+
+.hamburger-menu-btn:hover {
+  background-color: inherit;
+}
+

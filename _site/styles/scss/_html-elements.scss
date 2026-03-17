@@ -1,0 +1,87 @@
+a {
+  transition: transform 0.2 ease-in-out;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+select {
+  padding: 0.5em;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+option {
+  padding: 0.5em;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+ul, ol {
+  padding-left: 1em;
+}
+
+blockquote {
+  padding: 0.2em 0.5em 0.2em 0.5em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+hr {
+  height: 0.2em;
+  background-color: var(--text-2);
+  border: none;
+}
+
+code {
+  padding: 0 0.2em;
+}
+
+// =============================== table ======================================= //
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.5em 0;
+  border-bottom: 0.2em solid var(--text-2);
+}
+
+td {
+  padding: 0.5em 0;
+  font-size: 1.05rem;
+  border-bottom: 0.1em solid var(--text-2);
+}
+
+td:last-child, 
+th:last-child {
+  padding-left: 2rem;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 100%;
+  }
+}

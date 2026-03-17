@@ -1,0 +1,32 @@
+---
+layout: layout.html
+---
+<div class="home-page">
+  <div class="description-section">
+    <h1>Action and Simplicity Over Inaction and Complexity</h1>
+  </div>
+  <div class="home-latest-project-section">
+    <h1>Latest Project</h1>
+    <p>Finished website redesign!</p>
+    <a href="/" class="link-btn">You're Already Here</a>
+  </div>
+  <div class="home-recent-posts-section">
+    <h1>Recent Blog Posts</h1>
+    <div class="posts-list">
+      {% assign latest_posts = collections.posts | reverse %}
+      {% for post in latest_posts limit: 3 %}
+        <a href="{{ post.url }}" class="post-card">
+          <img class="card-banner" src="{{ post.data.banner }}">
+          <h3 class="card-title">#{{ post.data.index }}. {{ post.data.title }}</h3>
+          <div class="post-tags">
+            <span>Tags:</span>
+            {% for tag in post.data.tags limit: 2 %}{% if tag != "posts" %}<span class="tag">{{ tag }}</span>{% endif %}{% endfor %}
+          </div>
+          <div class="card-description">{{ post.data.description }}</div>
+        </a>
+      {% endfor %}
+    </div>
+    <a href="/pages/blog" class="link-btn">Read More</a>
+  </div>
+</div>  
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="/images/letter-a-2.svg" type="image/svg+xml">
+  <meta name="keywords" content="website">
+  <meta name="author" content="A.B. Collins">
+  <meta name="robots" content="index, follow">
+  <title>abagora</title>
+  <meta name="description" content="Writing to further art & tech.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    (function() {
+      const saved = localStorage.getItem("user-theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+  <script src="/scripts/color-changer.js" defer></script>
+  <script src="/scripts/get-current-year.js" defer></script>
+  <script src="/scripts/obfuscate-email.js" defer></script>
+  <script src="/scripts/hamburger-menu.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <nav class="header-nav">
+        <a href="/pages/blog" class="icon-link"><img src="/images/document.svg" class="icon-mono"><h2>Blog</h2></a>
+        <a href="/pages/novels" class="icon-link"><img src="/images/book.svg" class="icon-mono"><h2>Novels</h2></a>
+        <a href="/pages/apps" class="icon-link"><img src="/images/code.svg" class="icon-mono"><h2>Apps</h2></a>
+        <a href="/pages/info" class="icon-link"><img src="/images/info.svg" class="icon-mono"><h2>Info</h2></a>
+        <button class="link-btn" aria-label="Switch Theme">
+          Theme: <span id="current-theme-text">Light</span>
+        </button>
+      </nav>
+    </header>
+    <div class="header-mobile">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <div class="hamburger-menu-btn">
+        <img src="/images/hamburger-menu.svg" class="icon-mono" id="menu-icon">
+      </div>
+    </div>
+    <main>
+      
+<div class="page-for-blog">
+  <img src="https://images.unsplash.com/photo-1730382624709-81e52dd294d4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" class="post-banner">
+  <article class="post">
+    <h1 class="post-title">#2. Embrace Radical Incrementalism</h1>
+    <div class="post-info">
+      <div class="post-info-item">
+        <span><img src="/images/tags.svg" class="icon-small"></span>
+        <span>Tags:</span>
+        <span class="tag">productivity</span><span class="tag"> habits</span>
+      </div>
+      <div class="post-info-item">
+        <span><img src="/images/time.svg" class="icon-small"></span>
+        <span>Date Published: 2025-10-22</span>
+      </div>
+    </div>
+    <p>This is an idea taken from Four Thousand Weeks by Oliver Burkeman, more talked about on pages 180 to 182.</p>
+<p>Finishing projects takes many days, weeks, even years.</p>
+<p>With that in mind, you should embrace the fact that you won't finish it in a day. You should take it as slow as possible, write 10 minutes, do 10 push-ups.</p>
+<p>Do those extremely small things every day.</p>
+<p>Hell, even take the weekends off.</p>
+<blockquote>
+<p>By rushing, your work quality will suffer, you will end up stressed and anxious, and you will be burnt out by the end.</p>
+</blockquote>
+<p>You should stop even when you feel you have a lot of energy left. Why? Because stopping helps strengthen the muscle of patience that will permit you to return to the project again and again.</p>
+<p>Another inspiration for this idea is the manhwa <a href="https://myanimelist.net/manga/146827/The_Lazy_Lord_Masters_the_Sword">The Lazy Lord Masters the Sword</a>, in which a character is training for years on end, just swinging a sword in their backyard.</p>
+<p>In conclusion, short bouts of effort over a long period of time are better than tens of hours of effort crammed into a short period of time.</p>
+
+  </article>
+</div>
+    </main>
+    <footer class="footer">
+      <div class="sitemap">
+        <b>Sitemap:</b>
+        <a href="/">Home</a>
+        <span>✱</span>
+        <a href="/pages/blog">Blog</a>
+        <span>✱</span>
+        <a href="/pages/novels">Novels</a>
+        <span>✱</span>
+        <a href="/pages/apps">Apps</a>
+        <span>✱</span>
+        <a href="/pages/info">Info</a>
+      </div>
+      <p>Made with ♥. Copyright © <span id="current-year"></span> abagora. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

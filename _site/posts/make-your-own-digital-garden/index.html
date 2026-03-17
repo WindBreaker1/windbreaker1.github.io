@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="/images/letter-a-2.svg" type="image/svg+xml">
+  <meta name="keywords" content="website">
+  <meta name="author" content="A.B. Collins">
+  <meta name="robots" content="index, follow">
+  <title>abagora</title>
+  <meta name="description" content="Writing to further art & tech.">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    (function() {
+      const saved = localStorage.getItem("user-theme") || "light";
+      document.documentElement.setAttribute("data-theme", saved);
+    })();
+  </script>
+  <script src="/scripts/color-changer.js" defer></script>
+  <script src="/scripts/get-current-year.js" defer></script>
+  <script src="/scripts/obfuscate-email.js" defer></script>
+  <script src="/scripts/hamburger-menu.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <header class="header">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <nav class="header-nav">
+        <a href="/pages/blog" class="icon-link"><img src="/images/document.svg" class="icon-mono"><h2>Blog</h2></a>
+        <a href="/pages/novels" class="icon-link"><img src="/images/book.svg" class="icon-mono"><h2>Novels</h2></a>
+        <a href="/pages/apps" class="icon-link"><img src="/images/code.svg" class="icon-mono"><h2>Apps</h2></a>
+        <a href="/pages/info" class="icon-link"><img src="/images/info.svg" class="icon-mono"><h2>Info</h2></a>
+        <button class="link-btn" aria-label="Switch Theme">
+          Theme: <span id="current-theme-text">Light</span>
+        </button>
+      </nav>
+    </header>
+    <div class="header-mobile">
+      <a href="/" class="icon-link"><img src="/images/letter-a-2.svg" class="icon"><h1>abagora</h1></a>
+      <div class="hamburger-menu-btn">
+        <img src="/images/hamburger-menu.svg" class="icon-mono" id="menu-icon">
+      </div>
+    </div>
+    <main>
+      
+<div class="page-for-blog">
+  <img src="https://images.unsplash.com/uploads/1411901100260f56b39b9/ab70b250?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="post-banner">
+  <article class="post">
+    <h1 class="post-title">#4. Make Your Own Digital Garden</h1>
+    <div class="post-info">
+      <div class="post-info-item">
+        <span><img src="/images/tags.svg" class="icon-small"></span>
+        <span>Tags:</span>
+        <span class="tag">technology</span><span class="tag"> note-taking</span>
+      </div>
+      <div class="post-info-item">
+        <span><img src="/images/time.svg" class="icon-small"></span>
+        <span>Date Published: 2025-11-14</span>
+      </div>
+    </div>
+    <p>A breezy way to tag your research or learning notes is with the digital garden system.</p>
+<p>This is a good way to return to notes and ideas you may have forgotten about to flesh them out.</p>
+<p>An example of such a tag system would be:</p>
+<ul>
+<li>Seedling</li>
+<li>Sapling</li>
+<li>Tree</li>
+</ul>
+<p><img src="https://images.unsplash.com/photo-1629096346363-b96e4d9634a1?w=600&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FwbGluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="sapling"></p>
+<h2>🌱 Seedling</h2>
+<p>The note is in the initial stage, a few sentences long.</p>
+<h2>🌴 Sapling</h2>
+<p>The note is in the middle stage, almost done.</p>
+<h2>🌳 Tree</h2>
+<p>The note is done, or as complete as it can be for now.</p>
+<h2>♻️ Review/Reread</h2>
+<p>Optional: you can put a review/reread tag for notes that are complete, but you may need the knowledge for later.</p>
+<h2>Full Forest</h2>
+<p>You can use any other terminology for your notes, or even add more stages.</p>
+<p>Good luck building your forest of knowledge!</p>
+<h2>External Resources</h2>
+<ul>
+<li><a href="https://www.dazlog.com/garden">Digital garden — Dazlog</a></li>
+</ul>
+
+  </article>
+</div>
+    </main>
+    <footer class="footer">
+      <div class="sitemap">
+        <b>Sitemap:</b>
+        <a href="/">Home</a>
+        <span>✱</span>
+        <a href="/pages/blog">Blog</a>
+        <span>✱</span>
+        <a href="/pages/novels">Novels</a>
+        <span>✱</span>
+        <a href="/pages/apps">Apps</a>
+        <span>✱</span>
+        <a href="/pages/info">Info</a>
+      </div>
+      <p>Made with ♥. Copyright © <span id="current-year"></span> abagora. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

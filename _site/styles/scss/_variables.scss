@@ -1,0 +1,95 @@
+:root {
+  --black: #252525;
+  --white: #e2dfd5;
+
+  --charcoal: #363636;
+  --cyan-light: #45bdc4;
+  --cyan-dark: #2d7a7e;
+  
+  --black-olive: #3e4937;
+  --green-light: #279749;
+  --green-dark: #1b6e34;
+
+  --paper: #f6f4f1;
+  --stone: #e4ded2;
+  --coral: #f95c4b;
+  --coral-pale: #f95c4bce;
+  --grey-light: #838379;
+  --grey-dark: #424242;
+  
+  --canvas: #fbfbf8;
+  --mist: #dbe3e9;
+  --cornflower: #6aa6da;
+  --pear: #e1e5ac;
+
+  --dune: #f6f5ec;
+  --sand: #c9bdad;
+  --tan: #9f7d58;
+  --leather: #5d4334;
+
+  --red-light: #d7584b;
+  --red-dark: #b93c2e;
+  --red-pale: #b93c2e8c;
+
+  --icon-white: brightness(0) invert(1);
+  --icon-black: none;
+}
+
+:root, [data-theme="light"] {
+  --bg: var(--black);
+  --bg-2: var(--paper);
+  --text: var(--white);
+  --text-2: var(--black);
+  --card-bg: var(--charcoal);
+  --card-text: var(--white);
+  --text-hover: var(--cyan-light);
+  --tag: var(--cyan-dark);
+  --icon-filter: var(--icon-white);
+  --icon-filter-2: var(--icon-black);
+}
+
+[data-theme="blue"] {
+  --bg: var(--mist);
+  --bg-2: var(--canvas);
+  --text: var(--black);
+  --text-2: var(--black);
+  --card-bg: var(--grey-dark);
+  --card-text: var(--white);
+  --text-hover: var(--cornflower);
+  --tag: var(--pear);
+  --icon-filter: var(--icon-black);
+  --icon-filter-2: var(--icon-black);
+}
+
+[data-theme="coral"] {
+  --bg: var(--stone);
+  --bg-2: var(--paper);
+  --text: var(--black);
+  --text-2: var(--black);
+  --card-bg: var(--grey-dark);
+  --card-text: var(--white);
+  --text-hover: var(--coral-pale);
+  --tag: var(--coral);
+  --icon-filter: var(--icon-black);
+  --icon-filter-2: var(--icon-black);
+}
+
+[data-theme="dark"] {
+  --bg: var(--charcoal);
+  --bg-2: var(--black);
+  --text: var(--white);
+  --text-2: var(--white);
+  --card-bg: var(--grey-dark);
+  --card-text: var(--white);
+  --text-hover: var(--green-light);
+  --tag: var(--green-dark);
+  --icon-filter: var(--icon-white);
+  --icon-filter-2: var(--icon-white);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', Helvetica, monospace;
+}
