@@ -6,6 +6,7 @@ Version 3 of abagora.
 
 - Use `sass --watch styles/scss/main.scss:styles/style.css` to compile css into one file.
 - Run a local server with npm using `npm start` (shorthand for `npx @11ty/eleventy --serve`) in the command line.
+- Deployed to github pages.
 
 ### Folder Structure
 
