@@ -143,8 +143,8 @@ blockquote {
 }
 
 .post-card {
-  background-color: var(--card-bg);
-  color: var(--card-text);
+  background-color: var(--bg-2);
+  color: var(--text-2);
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -329,7 +329,7 @@ table tr:last-child td {
 .posts-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
-  gap: 0.5em;
+  gap: 1em;
   padding: 0 0.5em;
   align-content: center;
   justify-items: center;
@@ -362,6 +362,8 @@ table tr:last-child td {
   text-decoration: none;
   width: auto;
   backface-visibility: hidden;
+  border: 0.2em solid var(--text-2);
+  box-shadow: 0.3em 0.3em 0px;
 }
 
 .card-banner {
@@ -489,7 +491,7 @@ table tr:last-child td {
   flex-direction: column;
   align-items: center;
   padding: 3em 0 10em 0;
-  gap: 1em;
+  gap: 2em;
 }
 
 /* ========================================== home page ========================================== */
@@ -534,7 +536,8 @@ table tr:last-child td {
   max-width: 700px;
   margin: 0 auto;
   gap: 2em;
-  border: 0.3em solid var(--text-2);
+  border: 0.2em solid var(--text-2);
+  box-shadow: 0.4em 0.4em 0em;
   padding: 1em;
 }
 

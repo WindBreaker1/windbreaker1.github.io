@@ -52,3 +52,7 @@ In the end, time spent creating anything, even if it has no inherent value, is v
 A picture, a sentence, a program, a song.
 
 It is a reflection of yourself onto the world.
+
+## Related Notes
+
+- [Time Equals Money](/posts/time-equals-money.md)

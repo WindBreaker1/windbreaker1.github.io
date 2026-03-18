@@ -20,8 +20,11 @@ What about money? You're more apprehensive when somebody asks you for money, rig
 
 Be ruthless with your time. Cut down anything that doesn't truly matter to you. Priorities should become priorities again.
 
+## Related Notes
+
+- [What Makes Time Valuable](/posts/what-makes-time-valuable.md)
+
 ## External Resources
 
 - Banner photo by [@anniespratt](https://unsplash.com/@anniespratt)
 - [The Brutal Truth About Time Management No One Wants to Hear - YouTube](https://youtu.be/XPEDJun8G_E?si=LYKq7KJc_yP9L6SJ)
-

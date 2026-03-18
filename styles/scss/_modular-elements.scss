@@ -76,7 +76,7 @@
 .posts-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
-  gap: 0.5em;
+  gap: 1em;
   padding: 0 0.5em;
   align-content: center;
   justify-items: center;
@@ -113,6 +113,9 @@
   text-decoration: none;
   width: auto;
   backface-visibility: hidden;
+
+  border: 0.2em solid var(--text-2);
+  box-shadow: 0.3em 0.3em 0px;
 }
 
 .card-banner {
