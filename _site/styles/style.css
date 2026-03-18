@@ -293,8 +293,13 @@ table tr:last-child td {
 }
 
 .icon, .icon-mono {
-  width: 34px;
-  height: 34px;
+  width: 26px;
+  height: 26px;
+}
+
+.icon-big {
+  width: 36px;
+  height: 36px;
 }
 
 .icon-small {

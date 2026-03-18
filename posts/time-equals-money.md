@@ -22,7 +22,7 @@ Be ruthless with your time. Cut down anything that doesn't truly matter to you. 
 
 ## Related Notes
 
-- [What Makes Time Valuable](/posts/what-makes-time-valuable.md)
+- [What Makes Time Valuable](/posts/what-makes-time-valuable)
 
 ## External Resources
 

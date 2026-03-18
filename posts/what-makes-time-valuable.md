@@ -55,4 +55,4 @@ It is a reflection of yourself onto the world.
 
 ## Related Notes
 
-- [Time Equals Money](/posts/time-equals-money.md)
+- [Time Equals Money](/posts/time-equals-money)
