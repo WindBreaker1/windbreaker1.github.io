@@ -1,11 +1,12 @@
 ---
-title: Stop procrastinating with Obsidian, Logseq, Notion, Roam.
+title: Stop Procrastinating with Note-Taking Apps
 index: 7
 tags:
   - productivity
   - note-taking
-date: 2025-03-17
-banner: https://images.unsplash.com/photo-1731983573683-9bedfb98324f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+date: 2026-03-20
+description: Stop procrastinating with Obsidian, Logseq, Notion, Roam.
+banner: /images/2026/books-organized.jpg
 ---
 ## What is the trap?
 
@@ -45,4 +46,3 @@ For a low-energy note-taking system check out this note: [make-your-own-digital-
 - [Stop Procrastinating With Note-Taking Apps Like Obsidian, Roam, Logseq - YouTube](https://youtu.be/baKCC2uTbRc?si=xVLdPb4eU8A4bAlb)
 - [Zettelkasten knowledge and info management • Zettelkasten Method](https://zettelkasten.de/)
 - [The Complexity Trap: Why You Overcomplicate Everything and How to Stop - YouTube](https://youtu.be/ZcakjauqjrI?si=53IxxWwwt5DXiEMA)
-- [How to KILL Analysis Paralysis - YouTube](https://youtu.be/SdZ52oTH-Gc?si=o4kPqRZCTIICZTbZ)

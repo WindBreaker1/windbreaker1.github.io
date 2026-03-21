@@ -5,7 +5,7 @@ tags:
   - time-management
 date: 2026-03-17
 description: There is this saying that time equals money, when it refers to a business, but it can also be taken literally, as a way to save time on things you don't want to do.
-banner: https://images.unsplash.com/photo-1574608198919-1f07683b9721?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+banner: /images/2026/money-green-bg.jpg
 ---
 There is this saying that time equals money, when it refers to a business, but it can also be taken literally, as a way to save time on things you don't want to do.
 

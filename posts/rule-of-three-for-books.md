@@ -4,7 +4,7 @@ index: 1
 tags: reading
 date: 2025-10-19
 description: You should have an easy, medium, and difficult book to read.
-banner: https://images.unsplash.com/photo-1554538856-6157578784a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170
+banner: /images/2025/books-rows.jpg
 ---
 I recently learned a specific advice for reading books from a [reddit comment](https://www.reddit.com/r/digitalminimalism/s/DUIyVKDVtQ).
 
