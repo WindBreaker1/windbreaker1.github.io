@@ -6,7 +6,7 @@ date: 2025-10-31
 description: It's bad to write down and constantly think about your flaws because you will think about them on a daily basis.
 banner: https://images.unsplash.com/photo-1638537690581-dc2192bfc7dd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHx3cml0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=400
 ---
-In In ['The Mountain is You' by Brianna Wiest](https://www.goodreads.com/book/show/53642699-the-mountain-is-you?ac=1), she talks about the practice of writing your flaws., she talks about the practice of writing your flaws.
+In ['The Mountain is You' by Brianna Wiest](https://www.goodreads.com/book/show/53642699-the-mountain-is-you?ac=1), she talks about the practice of writing your flaws.
 
 She believes that writing down your flaws will give you a to-do list on how to fix those things.
 
