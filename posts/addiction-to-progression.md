@@ -6,7 +6,7 @@ tags:
   - gaming
 date: 2026-03-28T05:47:42.008Z
 description: MMO's are incentivized by the nature of their monetization system to keep you hooked.
-banner: images\2026\osrs-varlamore-map.png
+banner: /images/2026/osrs-varlamore-map.png
 ---
 ## There are years of content in OSRS.
 
